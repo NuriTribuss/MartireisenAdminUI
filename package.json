@@ -1,0 +1,40 @@
+{
+  "name": "martireisen-panel",
+  "version": "1.0.0",
+  "description": "Martireisen Panel",
+  "author": "Martireisen Panel",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build --spa",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/auth": "^4.8.5",
+    "@nuxtjs/axios": "^5.9.4",
+    "@tinymce/tinymce-vue": "3.2.0",
+    "ant-design-vue": "^1.5.4",
+    "bootstrap-css-only": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.26",
+    "chart.js": "^2.9.3",
+    "chartist": "^0.11.4",
+    "chartist-plugin-tooltips-updated": "^0.1.2",
+    "nuxt": "^2.15.8",
+    "v-chartist": "^0.1.6",
+    "vee-validate": "^3.2.3",
+    "vue-chartjs": "^3.5.0",
+    "vue-custom-scrollbar": "^1.0.0",
+    "vue-i18n": "^8.15.3",
+    "vuedraggable": "^2.23.2",
+    "vuelayers": "^0.11.4"
+  },
+  "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/moment": "^1.6.0",
+    "node-sass": "^8.0.0",
+    "sass-loader": "^10.1.1"
+  },
+  "packageManager": "yarn@1.22.19"
+}
+

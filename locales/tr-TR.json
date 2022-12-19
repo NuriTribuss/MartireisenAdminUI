@@ -1,0 +1,1047 @@
+{
+  "for-msg": {
+    "1": "Evet",
+    "0": "Hayır"
+  },
+  "common": {
+    "edit": "Düzenle",
+    "yes": "Evet",
+    "no": "Hayır",
+    "new": "Yeni",
+    "back": "Geri",
+    "language": "Dil",
+    "currency": "Para Birimi",
+    "cancel": "Vazgeç",
+    "save": "Kaydet",
+    "active": "Aktif",
+    "passive": "Pasif",
+    "remove": "Sil",
+    "1": "Aktif",
+    "0": "Pasif",
+    "search": "Ara",
+    "close": "Kapat",
+    "preview": "Önizleme",
+    "character": "Metin uzunluğu",
+    "today": "Bugün",
+    "week": "Haftalık",
+    "month": "Aylık",
+    "year": "Yıllık",
+    "go-to-page": "Sayfaya git",
+    "view-all": "Tümü",
+    "protect_area" : "Erişim Kısıtlı",
+    "protect_area_msg" : "Üzgünüm, Bu sayfayı görüntüleyebilmek için yeterli izne sahip değilsin"
+  },
+  "topbar": {
+    "breadcrumb": {
+      "title": "Gösterge Paneli"
+    }
+  },
+  "menu": {
+    "ecommerceManagement": "E-Ticaret Yönetimi",
+    "dashboards": "Gösterge Paneli",
+    "orders": "Siparişler",
+    "customers": "Müşteriler",
+    "catalog": "Katalog",
+    "commerceLocalization": "E-Ticaret Ayarlar",
+    "contentManagement": "İçerik Yönetimi",
+    "contents": "Yazılar",
+    "pages": "Sayfalar",
+    "modules": "Modüller",
+    "systemManagement": "Sistem Yönetimi",
+    "design": "Görünüm",
+    "generalLocalization": "Yerelleştirme",
+    "mediaManager": "Ortam Yöneticisi",
+    "settings": "Ayarlar",
+    "customers-list": "Müşteriler",
+    "customers-fields": "Alan Yönetimi",
+    "ecommerce-regions": "Bölgeler",
+    "catalogCategories": "Menü",
+    "localization.languages": "Diller",
+    "localization.currencies": "Para Birimi",
+    "notification": "Bildirimler"
+  },
+  "messages": {
+    "warning": "Uyarı",
+    "success": "Başarılı",
+    "required": "Zorunlu Alan",
+    "wait": "Lütfen Bekleyiniz!",
+    "select": "Lütfen bir kayıt seçiniz!",
+    "fields": "Lütfen tüm alanları eksiksiz doldurunuz!",
+    "valid_fields": "Lütfen geçerli/doğru bilgi giriniz!",
+    "login_control": "Lütfen yetkili giriş bilgilerinizi kontrol ediniz!",
+    "username_err": "Lütfen geçerli bir kullanıcı adı giriniz!",
+    "name_err": "Lütfen geçerli bir ad giriniz!",
+    "surname_err": "Lütfen geçerli bir soyad giriniz!",
+    "name_surname_err": "Lütfen geçerli bir ad ve soyad giriniz!",
+    "email_err": "Lütfen geçerli bir e-posta giriniz!",
+    "email_address_err": "Lütfen geçerli bir e-posta adresi giriniz!",
+    "password_err": "Lütfen geçerli bir şifre giriniz!",
+    "loading": "Yükleniyor...",
+    "empty_list": "Kayıt bulunamadı",
+    "sure_action": "İşlemi yapmak istediğinize emin misiniz?",
+    "sure_delete": "Silme işlemi yapmak istediğinize emin misiniz?",
+    "sure_update": "Güncelleme işlemi yapmak istediğinize emin misiniz?",
+    "action_ok": "İşleminiz başarılı bir şekilde tamamlanmıştır.",
+    "delete_ok": "Silme işleminiz başarılı bir şekilde tamamlanmıştır.",
+    "update_ok": "Güncelleme işleminiz başarılı bir şekilde tamamlanmıştır.",
+    "action_err": "İşleminiz gerçekleştirilememiştir.",
+    "delete_err": "Silme işleminiz gerçekleştirilememiştir.",
+    "update_err": "Güncelleme işleminiz gerçekleştirilememiştir.",
+    "sure_text": "Dikkat! Onayladığınız taktirde yapacağınız işlem geri alınamaz.",
+    "undeletable": "Silinemez / Sabit",
+    "server_err": "Sunucu hatası oluştu",
+    "multi_remove_message": "Seçilen modelleri silmek istediğinize emin misiniz?",
+    "remove_message": "Kayıtı silmek istediğinize emin misiniz?",
+    "language": "Lütfen dil seçiniz",
+    "model_name": "Lütfen model ismi giriniz.",
+    "model_url": "Lütfen model url giriniz.",
+    "category_name": "Lütfen kategori ismi giriniz.",
+    "category_url": "Lütfen kategori url giriniz.",
+    "order_status_name": "Lütfen başlık giriniz.",
+    "order_status_text": "Lütfen açıklama giriniz.",
+    "pages_name": "Lütfen başlık giriniz.",
+    "pages_url": "Lütfen url giriniz.",
+    "pages_content": "Lütfen açıklama giriniz.",
+    "attribute_name": "Lütfen nitelik ismi giriniz.",
+    "attribute_option_name": "Lütfen nitelik ismi giriniz.",
+    "search_method": "Seçilene göre ara",
+    "menu_name": "Menü adı giriniz.",
+    "menu_categories_name": "Lütfen kategori adı giriniz.",
+    "menu_categories_type": "Lütfen menü tipi seçiniz",
+    "menu_categories_type_table_id": "Lütfen menü linkini belirleyiniz",
+    "menu_categories_url": "Url giriniz",
+    "menu_category_description": "Açıklama giriniz",
+    "channel_name": "Kanal adı giriniz",
+    "channel_categories": "Kategori seçiniz",
+    "notification_message": "Mesaj giriniz.",
+    "notification_subject": "konu giriniz.",
+    "order_status": "Sipariş durumu seçiniz.",
+    "order_customer_phone": "Lütfen telefon giriniz",
+    "order_customer_email": "Lütfen email giriniz",
+    "product_field_text": "Lütfen değer giriniz"
+  },
+  "table": {
+    "transaction": "İşlemler",
+    "page": "Sayfa :",
+    "total": "Toplam :",
+    "empty_message": "Henüz bir kayıt eklenmemiş"
+  },
+  "pages": {
+    
+    "booking": {
+      "title": "Rezervasyonlar",
+      "active": "Aktif",
+      "passive": "Pasif",
+      "cols": {
+        "pnr": "Kod",
+        "active": "Aktif/Pasif",
+        "name" : "İsim",
+        "surname" : "Soyisim",
+        "email" :"Mail Adresi",
+        "birthday" : "Doğum Tarihi",
+        "phone" : "Telefon",
+        "operator" : "Operatör",
+        "amount" : "Tutar",
+        "created_at" : "Tarih",
+        "adult" : "Yetişkin",
+        "children" : "Çocuk",
+        "start" : "Gidiş",
+        "end" : "Dönüş",
+        "location" :"Lokasyon",
+        "status" : "Durum"
+      },
+      "filter" : {
+        "min_date" : "Tarih Min.",
+        "max_date" : "Tarih Max.",
+        "source" : "Api",
+        "code" : "Rezervasyon No",
+        "email" : "Email",
+        "name" : "Müşteri Adı"
+      },
+      "flight" : "Uçuş Bilgileri",
+      "contact" : "İletişim Bilgileri",
+      "detail"    : "Seyahat Bilgileri",
+      "payment_info" : "Ödeme Bilgileri",
+      "api_info" : "Api Bilgileri",
+      "change_status" : "Değiştir",
+      "payment_method" : "Ödeme Yöntemi",
+      "payment_status" : "Ödeme Durumu",
+      "history" : "Değişiklik Logları"
+    },
+    "engine_operator": {
+      "title": "Operatörler",
+      "detail": "Operatör Ekle / Düzenle",
+      "percent": "Yüzde",
+      "stable": "Sabit Değer",
+      "active": "Aktif",
+      "passive": "Pasif",
+      "cols": {
+        "code": "Operatör Kodu",
+        "type": "Tip",
+        "value": "Operatör Adı",
+        "booking_online" : "Hard Booking",
+        "active": "Aktif/Pasif"
+      }
+    },
+    "engine_airport": {
+      "title": "Havalimanları",
+      "detail": "Havalimanı Ekle / Düzenle",
+      "active": "Aktif",
+      "passive": "Pasif",
+      "cols": {
+        "code": "Havalimanı Kodu",
+        "name": "Havalimanı Adı",
+        "active": "Aktif/Pasif",
+        "status" : "Durum",
+        "country" : "Ülke",
+        "created_at" : "Oluşturulma Tarihi"
+      }
+    },
+    "tour": {
+      "title": "Turlar",
+      "detail": "Tur Ekle / Düzenle",
+      "percent": "Yüzde",
+      "stable": "Sabit Değer",
+      "active": "Aktif",
+      "passive": "Pasif",
+      "tab_1" : "Genel Bilgiler",
+      "tab_2" : "Tur Periyodları",
+      "tab_3" : "İkramlar / Hizmetler",
+      "tab_4" : "Tur Planı",
+      "tab_5" : "Tur Resimleri",
+      "tab_6" : "Tur Videoları",
+      "tab_7" : "Tur Krokisi",
+      "extra_info" : "Ek Bilgiler",
+      "map" : "Google Harita",
+      "agreegment" : "Sözleşme / Bilgiler",
+      "contact_phone" : "Tur İletişim No",
+      "image_file" : "Tur Kapak Görseli",
+      "departure" : "Kalkış",
+      "destination" : "Hedef",
+      "type" : "Tur Sınıfı",
+      "country" : "Ülke",
+      "age" : "Yaş Sınırı",
+      "cols": {
+        "name": "Tur Adı",
+        "departure" : "Kalkış",
+        "destination" : "Hedef",
+        "max_count" : "Kontenjan",
+        "available" : "Boş Kontenjan",
+        "usage" :  "Katılımcı"
+      }
+    },
+    "tour_plan": {
+      "title": "Tur Planı",
+      "active": "Aktif",
+      "passive": "Pasif",
+      "cols": {
+        "name": "Başlık",
+        "content" : "İçerik"
+      }
+    },
+    "tour_property": {
+      "title": "İkramlar / Hizmetler",
+      "active": "Aktif",
+      "price_include" : "Ücrete Dahil Mi ? ",
+      "price" : "Ücret",
+      "passive": "Pasif",
+      "cols": {
+        "name": "Başlık",
+        "content" : "İçerik"
+      }
+    },
+    "tour_period": {
+      "title": "Tur Periyotları / Listeleri",
+      "detail": "Operatör Ekle / Düzenle",
+      "percent": "Yüzde",
+      "stable": "Sabit Değer",
+      "active": "Aktif",
+      "passive": "Pasif",
+      "cols": {
+        "name": "Tur Adı",
+        "start" : "Başlangıc Tarihi",
+        "start_hour" : "Saat",
+        "end" : "Dönüş Tarihi",
+        "max_count" : "Kontenjan",
+        "available" : "Boş Kontenjan",
+        "usage" :  "Katılımcı"
+      }
+    },
+    "tour_station": {
+      "title": "Durak Noktaları",
+      "cols": {
+        "station": "Durak",
+        "hour" : "Saat",
+        "price" : "Fiyat",
+        "price_child" : "Çocuk Fiyat",
+        "sort" : "Sıra No",
+        "action" :  "İşlem"
+      }
+    },
+    "halal_hotel": {
+      "title": "İslami Oteller",
+      "cols": {
+        "name": "Otel Adı",
+        "type" : "Otel Tipi",
+        "country" : "Ülke",
+        "location" : "Lokasyon"
+      }
+    },
+    "menu": {
+      "title": "Menüler > Menü",
+      "sub_title": "Menü Listesi",
+      "add-menu-item": "Menü ekle",
+      "cols": {
+        "code": "Kod",
+        "name": "Menü Adı",
+        "status": "Durum",
+        "sort_number": "Sıra No",
+        "created_at": "Tarih"
+      }
+    },
+    "menu_categories": {
+      "title": "Menüler",
+      "sub_title": "Menü > Menüyü Düzenle",
+      "external": "Dış link",
+      "page": "Sayfalar",
+      "product_category": "Ürün Kategorileri",
+      "product": "Ürünler",
+      "system": "Sistem",
+      "cols": {
+        "code": "Kod",
+        "name": "Kategori Adı",
+        "type": "Tip Seç",
+        "type_table_id": "Type link",
+        "url": "Url",
+        "description": "Description",
+        "status": "Durum",
+        "sort_number": "Sıra No",
+        "created_at": "Tarih"
+      }
+    },
+    "branch": {
+      "title": "Şubeler",
+      "sub_title": "Şube Listesi",
+      "add-branch-item": "Yeni Şube ekle",
+      "branch-edit": "Şubesini Düzenle",
+      "cols": {
+        "name": "Şube Adı",
+        "address": "Şube Adresi",
+        "country": "Ülke",
+        "state": "Eyalet",
+        "city": "Şehir",
+        "phone": "Telefon",
+        "fax": "Fax",
+        "email": "Email",
+        "coordinate_x": "X Koordinatı",
+        "coordinate_y": "Y Kordinatı",
+        "week_hours" : "Haftaiçi Saatler",
+        "weekend_hours" : "Haftasonu Çalışma Saatleri",
+        "status": "Durum"
+      }
+    },
+    "support": {
+      "title": "Yardım Merkezi",
+      "sub_title": "Yardım Merkezi Listesi",
+      "cols": {
+        "code": "Kod",
+        "name": "İsim",
+        "categories": "Kategoriler",
+        "sort_number": "Sıra No",
+        "status": "Durum",
+        "url": "Url",
+        "content": "İçerik"
+      }
+    },
+    "link": {
+      "title": "Link Yönetimi",
+      "cols": {
+        "link": "Link",
+        "type": "Link Tipi",
+        "language": "Dil",
+        "title": "Seo Title"
+      }
+    },
+  
+    "home": {
+      "title": "Dashboard",
+      "overview": "Dashboard",
+      "pending-orders": "BEKLEYEN SİPARİŞ",
+      "total-sales" : "Toplam Rezervasyon",
+      "total-member" : "Toplam Üye"
+   
+    },
+   
+    "payments": {
+      "title": "Ödeme Yöntemleri",
+      "sub_title": "Ödeme Yöntemleri Listesi",
+      "cols": {
+        "code": "Kod",
+        "title": "Başlık",
+        "description": "İçerik",
+        "is_online": "Online",
+        "sort_number": "Sıra No.",
+        "is_active": "Aktif",
+        "commission_type" : "Ek Ücret Tipi",
+        "commission_type_1" : "Sipariş Tutarı Üzerinden %",
+        "commission_type_2" : "Sabit Tutar",
+        "commission_value" : "Değer",
+        "commission_select" : "Seçiniz"
+      }
+    },
+    "members": {
+      "title": "Üye Listesi",
+      "sub_title": "Müşteri Listesi",
+      "detail": "Müşteri Detayı",
+      "address_list": "Adres Listesi",
+      "fields": {
+        "title": "Alan Yönetimi",
+        "field_list": "Alan Listesi",
+        "cols": {
+          "id": "ID",
+          "field": "Alan",
+          "field_code": "Alan Kodu",
+          "visible_edit": "Üye Düzenle",
+          "visible_create": "Üye Kayıt",
+          "is_static": "Sabit",
+          "is_required": "Zorunlu",
+          "sort_number": "Sıra No"
+        }
+      },
+      "cols": {
+        "id": "ID",
+        "title": "Adres Adı",
+        "name": "Adı",
+        "surname": "Soyadı",
+        "email": "E-Mail",
+        "home_phone": "Sabit Telefon",
+        "mobile_phone": "Mobil Telefon",
+        "country": "Ülke",
+        "city": "Şehir",
+        "town": "İlçe",
+        "order_count": "Sipariş Sayısı",
+        "login_count": "Oturum Sayısı",
+        "created_at": "Üyelik Tarihi",
+        "language": "Dil"
+      },
+      "filter" : {
+        "min_date" : "Tarih Min.",
+        "max_date" : "Tarih Max.",
+        "email" : "E-Mail",
+        "name" : "Adı"
+      }
+    },
+    "users": {
+      "title": "Kullanıcı Listesi",
+      "sub_title": "Kullanıcı Listesi",
+      "detail": "Kullanıcı Detayı",
+      "password_change": "kullanıcısının şifresini güncelle",
+      "cols": {
+        "id": "ID",
+        "username": "Kullanıcı Adı",
+        "name": "Adı",
+        "surname": "Soyadı",
+        "password": "Şifre",
+        "email": "E-Mail",
+        "website": "Website",
+        "home_phone": "Sabit Telefon",
+        "mobile_phone": "Mobil Telefon",
+        "login_count": "Oturum Sayısı",
+        "created_at": "Üyelik Tarihi",
+        "language": "Dil",
+        "group": "Grup"
+      }
+    },
+    "groups": {
+      "title": "Kullanıcı Grup Listesi",
+      "sub_title": "Kullanıcı Grup Listesi",
+      "detail": "Kullanıcı Grup Detayı",
+      "cols": {
+        "id": "ID",
+        "name": "Adı",
+        "group": "Grup",
+        "is_active": "Durum"
+      },
+      "permissions": {
+        "title": "{name} Grup İzinleri",
+        "sub_title": "{name} Grup İzinleri",
+        "name": "Erişim Adresi",
+        "read": "Okuma",
+        "create": "Oluşturma",
+        "delete": "Silme",
+        "update": "Güncelleme",
+        "detail": "Detayları Görüntüle"
+      }
+    },
+    "states": {
+      "title": "Bölgeler",
+      "sub_title": "Bölgeler Listesi",
+      "cols": {
+        "name": "İsim",
+        "state_code": "Bölge Kodu"
+      }
+    },
+    "regions": {
+      "title": "Bölgeler",
+      "sub_title": "Bölge Listesi",
+      "countries": "Ülkeler",
+      "states": "Şehirler",
+      "cities": "İlçeler",
+      "countries_search": "Ülke Ara",
+      "states_search": "Şehir Ara",
+      "cities_search": "İlçe Ara"
+    },
+    "locations": {
+      "1": "Head açılış öncesi",
+      "2": "Body açılış öncesi",
+      "3": "Body kapanış öncesi"
+    },
+    "promocode": {
+      "title": "Promosyon Kodları",
+      "detail": "Promosyon Ekle / Düzenle",
+      "percent": "Yüzde",
+      "stable": "Sabit Değer",
+      "active": "Aktif",
+      "passive": "Pasif",
+      "cols": {
+        "code": "Kod",
+        "type": "Tip",
+        "value": "Değer",
+        "min_amount": "Min. Sepet",
+        "start_date": "Başl. Tarihi",
+        "end_date": "Bitiş Tarihi",
+        "active": "Aktif/Pasif"
+      }
+    },
+    "affilate": {
+      "title": "Reklam Linkleri",
+      "detail": "Link Ekle / Düzenle",
+      "percent": "Yüzde",
+      "stable": "Sabit Değer",
+      "active": "Aktif",
+      "passive": "Pasif",
+      "cols": {
+        "code": "Kod",
+        "type": "Tip",
+        "value": "Değer",
+        "min_amount": "Min. Sepet",
+        "start_date": "Başl. Tarihi",
+        "end_date": "Bitiş Tarihi",
+        "active": "Aktif/Pasif"
+      }
+    },
+    "settings": {
+      "title": "Ayarlar",
+      "system": "Sistem",
+      "contact": {
+        "title": "İletişim Bilgileri",
+        "phone": "Telefon",
+        "fax": "Fax",
+        "mail": "E-Posta",
+        "address": "Adres",
+        "company": "Şirket"
+      },
+      "translate": "Çeviri",
+      "language": "Çeviri Dili",
+      "history" : "Ayar Güncelleme Geçmişi",
+      "history_old" : "Eski Değer",
+      "history_new" : "Yeni Değer",
+      "socialmedia": {
+        "title": "Sosyal Medya"
+      },
+      "info": {
+        "title": "Künye",
+        "company": "Şirket",
+        "phone": "Telefon",
+        "fax": "Fax",
+        "mail": "E-Posta",
+        "address": "Adres",
+        "website": "Website"
+      },
+      "mail": {
+        "title": "E-Posta Servisi",
+        "username": "Kullanıcı Adı",
+        "pw": "Şifre",
+        "sender_name": "Gönderen Adı",
+        "smtp_server": "SMTP Sunucusu",
+        "smtp_port": "SMTP Port",
+        "ssl": "SSL Aktif",
+        "secure": "Güvenli Bağlantı",
+        "auth": "Auth"
+      }
+    },
+    "message": {
+      "title": "İletişim Mesajları",
+      "sub_title": "İletişim Mesajları Listesi",
+      "save": {
+        "name": "İsim",
+        "surname": "Soyisim",
+        "email": "Mail Adresi",
+        "phone": "Telefon",
+        "subject": "Konu",
+        "message": "Mesaj",
+        "header": "Hızlı Görüntüleme"
+      },
+      "cols": {
+        "name": "İsim",
+        "surname": "Soyisim",
+        "email": "Mail adresi",
+        "phone": "Telefon",
+        "subject": "Konu",
+        "is_read": "Okundu",
+        "is_reply": "Cevaplandı",
+        "message": "Mesaj"
+      }
+    },
+
+    "notification": {
+      "title": "Notifications",
+      "parameters": "Aşağıdaki değişkenleri <b> {{order_number}} </b> örneği gibi kullanabilirsiniz",
+      "cols": {
+        "id": "ID",
+        "name": "İsim",
+        "message": "Mesaj",
+        "subject": "Konu"
+      }
+    },
+    "currency": {
+      "title": "Para Birimi",
+      "sub_title": "Para Birimleri Listeleri",
+      "cols": {
+        "code": "Kod",
+        "name": "İsim",
+        "is_default": "Default",
+        "rate": "Kur",
+        "commission": "Komisyon / Kur farkı yüzdesi",
+        "status": "Durum",
+        "created_at": "Oluşturulma Tarihi",
+        "updated_at": "Son Güncelleme"
+      }
+    },
+    "languages": {
+      "title": "Diller",
+      "sub_title": "Diller Listesi",
+      "parameters": "Parametreleri",
+      "language_parameters": "Dil Parametreleri",
+      "search_term" : "Bir Kelime Arayın",
+      "cols": {
+        "id": "ID",
+        "name": "Isim",
+        "flag": "Bayrak",
+        "is_default": "Default",
+        "is_rtl": "Sağdan sola",
+        "status": "Durumu",
+        "created_at": "Oluşturulma tarihi"
+      }
+
+    },
+    "contents": {
+      "title": "Yazılar",
+      "sub_title": "Yazılar Listesi",
+      "cols": {
+        "code": "Kod",
+        "name": "Yazı Adı",
+        "content": "İçerik",
+        "url": "Url Adresi",
+        "status": "Durum",
+        "sort_number": "Sıra No",
+        "created_at": "Tarih"
+      },
+      "save": {
+        "title": "Başlık",
+        "content": "İçerik",
+        "categories": "Kategoriler",
+        "sort_no": "Sıra No",
+        "status": "Durum",
+        "seoTitle": "Başlık",
+        "seoDesc": "Açıklama",
+        "summary" : "Özet",
+        "seoTag": "Etiketler",
+        "seoURL": "URL",
+        "seoSettings": "Seo Ayarları"
+      },
+      "translate": {
+        "lang": "Dil",
+        "url": "URL Adresi",
+        "content_title": "Yazı Adı"
+      }
+    },
+    "pages": {
+      "title": "Sayfalar",
+      "sub_title": "Sayfa Listesi",
+      "cols": {
+        "code": "Kod",
+        "name": "Sayfa Adı",
+        "content": "İçerik",
+        "url": "Url Adresi",
+        "status": "Durum",
+        "sort_number": "Sıra No",
+        "created_at": "Tarih"
+      }
+    },
+    "landing_otel": {
+      "title": "Otel Landing Sayfaları",
+      "sub_title": "Sayfa Listesi",
+      "cols": {
+        "code": "Kod",
+        "name": "Sayfa Adı",
+        "subtitle" : "Alt Başlık",
+        "second_title"  :"İkinci Başlık",
+        "second_subtitle" : "İkinci Alt Başlık",
+        "content": "İçerik",
+        "url": "Url Adresi",
+        "language": "Dil",
+        "sort_number": "Sıra No",
+        "created_at": "Tarih"
+      },
+      "filter" : {
+        "name" : "Otel Adı",
+        "url" : "Url."
+      }
+    },
+    "landing_zone": {
+      "title": "Bölge Landing Sayfaları",
+      "sub_title": "Sayfa Listesi",
+      "cols": {
+        "code": "Kod",
+        "name": "Sayfa Adı",
+        "subtitle" : "Alt Başlık",
+        "second_title"  :"İkinci Başlık",
+        "second_subtitle" : "İkinci Alt Başlık",
+        "third_title"  :"Üçüncü Başlık",
+        "third_subtitle" : "Üçüncü Alt Başlık",
+        "content": "İçerik",
+        "url": "Url Adresi",
+        "language": "Dil",
+        "sort_number": "Sıra No",
+        "created_at": "Tarih"
+      },
+      "filter" : {
+        "name" : "Sayfa Adı",
+        "url" : "Url."
+      }
+    },
+    "landing_base": {
+      "title": "Temel/Konsept Landing Sayfaları",
+      "sub_title": "Sayfa Listesi",
+      "cols": {
+        "code": "Kod",
+        "name": "Sayfa Adı",
+        "subtitle" : "Alt Başlık",
+        "second_title"  :"İkinci Başlık",
+        "second_subtitle" : "İkinci Alt Başlık",
+        "third_title"  :"Üçüncü Başlık",
+        "third_subtitle" : "Üçüncü Alt Başlık",
+        "content": "İçerik",
+        "url": "Url Adresi",
+        "language": "Dil",
+        "sort_number": "Sıra No",
+        "created_at": "Tarih"
+      },
+      "filter" : {
+        "name" : "Sayfa Adı",
+        "url" : "Url."
+      }
+    },
+    "landing_link": {
+      "title": "Landing Footer Linkler",
+      "sub_title": "Sayfa Listesi",
+      "cols": {
+        "code": "Kod",
+        "name": "Adı",
+        "active" : "Aktif",
+        "url": "Url Adresi",
+        "language": "Dil",
+        "sort_number": "Sıra No",
+        "created_at": "Tarih"
+      }
+    },
+    "information": "Genel Bilgiler",
+    "title": "Başlık",
+    "title_user": "Sitede Görünen",
+    "description": "Açıklama",
+    "rank": "Sıra",
+    "sort": "Sırala",
+    "sort_n": "Sıra No",
+    "picture": "Resim",
+    "status": "Durum",
+    "online": "Online Çekim",
+    "active": "Aktif",
+    "passive": "Pasif",
+    "constituent": "Oluşturan",
+    "time": "Zaman",
+    "date": "Tarih",
+    "date_time": "Tarih & Zaman",
+    "show": "Göster",
+    "lists": "Listele"
+  },
+  "btn": {
+    "new": "Yeni",
+    "add": "Ekle",
+    "create": "Oluştur",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "archive": "Arşivle",
+    "yes": "Evet",
+    "no": "Hayır",
+    "cancel": "Vazgeç",
+    "refresh": "Yenile",
+    "update": "Güncelle",
+    "filter": "Filtrele",
+    "save": "Kaydet",
+    "saveAll" : "Tümünü Kaydet",
+    "select": "Seç",
+    "select_file" : "Dosya Seç",
+    "upload": "Yükle",
+    "download": "İndir",
+    "action": "İşlem",
+    "previous": "Önceki",
+    "ensuing": "Sonraki",
+    "next": "İleri",
+    "back": "Geri",
+    "fields": "Alanlar",
+    "meta": "Meta Yönetimi",
+    "send": "Gönder",
+    "category_edit": "Kategorileri Düzenle",
+    "process_edit": "Süreçleri Düzenle",
+    "image_upload": "Resim yüklemek için tıklayın",
+    "live_seen": "Sitede Gör"
+  },
+  "profile": {
+    "account": "Hesabım",
+    "personal_info": "Kişisel Bilgiler",
+    "active_password": "Mevcut Şifre",
+    "new_password": "Yeni Şifre",
+    "new_password_again": "Tekrar Yeni Şifre"
+  },
+  "input": {
+    "title": "Başlık",
+    "product_title": "Ürün Başlığı",
+    "fullname": "Ad Soyad",
+    "name": "Ad",
+    "firstname" : "Ad",
+    "surname": "Soyad",
+    "name_surname": "Ad ve Soyad",
+    "email": "E-Posta",
+    "email_address": "E-Posta Adresi",
+    "phone": "Telefon",
+    "phone_number": "Telefon Numarası",
+    "password": "Şifre",
+    "password_new": "Şifre (Yeni)",
+    "password_again": "Şifre (Tekrar)",
+    "gender": "Cinsiyet",
+    "tax_office": "Vergi Dairesi",
+    "tax_number": "Vergi No",
+    "company": "Firma",
+    "date_of_birth": "Doğum Tarihi",
+    "gender_woman": "Kadın",
+    "gender_man": "Erkek",
+    "url": "URL Adresi",
+    "description": "Açıklama",
+    "content": "İçerik",
+    "barcode": "Barkod",
+    "website": "Web sitesi",
+    "address": "Adres",
+    "city": "Şehir",
+    "district": "İlçe",
+    "post_code": "Posta Kodu",
+    "date": "Tarih",
+    "country": "Ülke",
+    "summary": "Özet",
+    "picture_add": "Resim Ekle",
+    "picture_summary": "veya yüklemek istediğiniz resimleri bu alana sürükleyin.",
+    "add": "Ekle",
+    "cancel": "Vazgeç",
+    "profile_edit": "Profili Düzenle",
+    "image_upload": "Görsel Yükle",
+    "language": "Dil",
+    "filter": {
+      "order": {
+        "order_number": "Sipariş Numarası",
+        "customer_number": "Müşteri Numarası",
+        "customer_email": "Müşteri Email",
+        "customer_firstname": "Müşteri Adı",
+        "customer_lastname": "Müşteri Soyadı",
+        "payment_method": "Ödeme Yöntemi",
+        "order_status": "Sipariş Durumu",
+        "order_min": "Genel Toplam (min)",
+        "order_max": "Genel Toplam (max)"
+      },
+      "product": {
+        "value": "Değer",
+        "brand": "Marka",
+        "model": "Model",
+        "stock_min": "Stok Min",
+        "stock_max": "Stok Max",
+        "price_min": "Fiyat Min",
+        "price_max": "Fiyat Max"
+      },
+      "member": {
+        "name": "Adı",
+        "surname": "Soyadı",
+        "email": "Email",
+        "phone": "Mobil Telefon",
+        "registration_date": "Üyelik Tarihi"
+      },
+      "link": {
+        "lang": "Dil",
+        "link": "Link",
+        "type": "Tip"
+      }
+    }
+  },
+  "auth": {
+    "login": "Giriş Yap",
+    "locked": "Oturum Aç",
+    "logout": "Çıkış Yap",
+    "forgot_password": "Şifrenizi mi unuttunuz?",
+    "login_title": "Yönetim Paneli",
+    "login_description": "Lütfen tarafınıza iletilen yetkili giriş bilgilerini kullanarak giriş yapınız.",
+    "login_success": "Başarıyla Giriş Yaptınız",
+    "login_error": "Kullanıcı adı veya parola hatalı",
+    "email": "Mail Adresi",
+    "password": "Şifre",
+    "page": {
+      "login_title": "Hoşgeldiniz",
+      "login_subtitle": "Cloud Site / Müşteri Yönetim Paneli"
+    }
+  },
+  "settings": {
+    "general_setting": "Genel Ayarlar",
+    "sys": "Sistem Ayarları",
+    "sys_language": "Sistem Dili",
+    "sys_currency": "Sistem Parabirimi",
+    "sys_country" : "Ülke" ,
+    "contact": "İletişim Bilgileri",
+    "contact_company": "Firma Adı",
+    "contact_phone": "Telefon Numarası",
+    "contact_fax": "Fax Numarası",
+    "contact_email": "Email Adresi",
+    "contact_address": "Addres",
+    "social": "Sosyal Ağlar",
+    "social_facebook": "Facebook",
+    "social_twitter": "Twitter",
+    "social_instagram": "Instagram",
+    "social_youtube": "Youtube",
+    "social_whatsapp": "Whatsapp",
+    "mail_smtpport": "SMTP Port",
+    "mail_smtphost": "SMTP Sunucusu",
+    "mail_email": "Kullanıcı Adı",
+    "mail_password": "Şifre",
+    "mail_sendername": "Gönderen Adı",
+    "mail_usessl": "SSL Aktif",
+    "mail_usesecure": "Güvenli Bağlantı (Secure)",
+    "mail_useauth": "Auth",
+  
+    "seo_title" : "Meta Seo Başlık (Genel)",
+    "seo_description" : "Meta Seo Açıklama (Genel)",
+    "seo_keywords" : "Meta Seo Anahtar Kelimeler (Genel)",
+    "seo": {
+      "title": "Seo ve Link Yönetimi",
+      "cols": {
+        "url": "SEO URL",
+        "created": "Oluşturan",
+        "title": "Başlık (Meta Title)",
+        "description": "Açıklama (Meta Description)",
+        "keywords": "Anahtar Kelimeler",
+        "status": "Durum",
+        "action": "İşlem"
+      },
+      "detail": {
+        "title": "Başlık",
+        "description": "Açıklama",
+        "keywords": "Anahtar Kelimeler"
+      }
+    }
+  },
+  "general": {
+    "copyright": "© 2020 Tribus Business. All rights reserved.",
+    "image": "Resim",
+    "note": "Not",
+    "country": "Ülke",
+    "countries": "Ülkeler",
+    "state": "Eyalet",
+    "states": "Eyaletler",
+    "city": "Şehir",
+    "cities": "Şehirler",
+    "district": "İlçe",
+    "districts": "İlçeler",
+    "zip_code": "Posta Kodu",
+    "address": "Adres",
+    "regions": "Bölgeler",
+    "phone_code": "Ülke Kodu",
+    "state_code": "Eyalet Kodu",
+    "iso": "ISO",
+    "created_at": "Oluşturulma Tarihi"
+  },
+  "languages": {
+    "tr": "Türkçe",
+    "de": "Almanca",
+    "en": "İngilizce"
+  },
+
+  "localization": {
+    "currencies": "Para Birimleri",
+    "languages": "Dil Yönetimi"
+  },
+  "customers": {
+    "member_list": "Müşteri Listesi",
+    "member_detail": "Müşteri Detayı",
+    "general_info": "Genel Detay",
+    "comment" : "Yorumlar",
+    "point" : "Puan Hareketleri",
+    "login_history" : "Oturum Geçmişi",
+    "orders": "Siparişler",
+    "adresses": "Adresler",
+    "login_count": "Toplam Giriş",
+    "fields": {
+      "name": "Alan Adı",
+      "code": "Kod",
+      "member_register": "Üye Kayıt",
+      "member_edit": "Üye Düzenleme",
+      "is_required": "Zorunlu",
+      "sort_number": "Sıra No"
+    }
+  },
+  "help" : {
+    "title" : "Yardım",
+    "ticket" : "Destek Talebi",
+    "developer" : "Geliştirici",
+    "my_ticket" : "Destek Taleplerim",
+    "create_ticket" : "Talep Oluştur",
+    "developer_doc" : "Geliştirici Dökümanı",
+    "api_doc"  : "API Reference / Endpoints"
+  },
+  "pages_title": {
+    "homepage": "Anasayfa",
+    "blank_page": "Boş sayfa",
+    "customers": "Müşteriler",
+    "customer_detail": "Müşteri Detay",
+    "customer_field_management": "Müşteri Alan Yönetimi",
+    "error_404": "Error 404",
+    "error_500": "Error 500",
+    "edit": "Düzenle",
+    "orders": "Siparişler",
+    "orders_list": "Sipariş Listesi",
+    "order_details": "Sipariş Detayı",
+    "payment_methods": "Ödeme Yöntemleri",
+    "regions": "Bölgeler",
+    "countries": "Ülkeler",
+    "cities": "Şehirler",
+    "counties": "İlçeler",
+    "states": "Devletler",
+    "currencies": "Para Birimleri",
+    "languages": "Diller",
+    "settings": "Settings",
+    "category": "Kategori",
+    "login": "Giriş",
+    "forgot_password": "Şifremi Unuttum",
+    "register": "Kayıt",
+    "lockscreen": "Kilit Ekranı",
+    "modules": "Modüller",
+    "pages": "Sayfalar",
+    "profile": "Profil",
+    "security": "Güvenlik",
+    "last_activities": "Son İşlemler"
+  }
+}

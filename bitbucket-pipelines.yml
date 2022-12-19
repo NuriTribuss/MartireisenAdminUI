@@ -1,0 +1,17 @@
+image: node:10.15.0
+pipelines:
+   branches:
+     master : 
+      - step:
+          name: Deployment
+          script:
+            #- npm install -g @angular/cli@8.3.22
+            #- npm install -g @angular/cli need to install angular-cli to make build
+            - yarn install
+            - yarn build
+            - apt-get update
+            - apt-get install ncftp
+            - pwd
+            - ls -l
+            - ncftpput -v -u "$FTP_USER" -p "$FTP_PASSWORD" -R $FTP_HOST $FTP_SITE_ROOT dist/*
+            - echo Finished uploading /dist files to $FTP_HOST$FTP_SITE_ROOT
