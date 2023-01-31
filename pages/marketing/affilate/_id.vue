@@ -53,7 +53,7 @@
                         :wrapper-col="{ span: 16 }"
                         label="Başlangıç Tarihi"
                       >
-                        <a-date-picker format="YYYY-MM-DD" class="w-100" v-model="form.date_start" />
+                        <a-date-picker format="YYYY-MM-DD" valueFormat="YYYY-MM-DD" class="w-100" v-model="form.date_start" />
                       </a-form-item>
                     </div>
                     <div class="col-6">
@@ -62,7 +62,7 @@
                         :wrapper-col="{ span: 16 }"
                         label="Bitiş Tarihi"
                       >
-                        <a-date-picker format="YYYY-MM-DD" class="w-100" v-model="form.date_end" />
+                        <a-date-picker format="YYYY-MM-DD" valueFormat="YYYY-MM-DD" class="w-100" v-model="form.date_end" />
                       </a-form-item>
                     </div>
                   </div>
