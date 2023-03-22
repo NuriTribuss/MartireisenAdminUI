@@ -328,9 +328,10 @@ export default {
 
         let formData = new FormData();
         formData.append('q',value);
-        this.$axios.post(`https://www.martireisen.at/service/engine/search/get`,formData).then((res) => {
+        this.$axios.post(`/service/engine/search/get`,formData).then((res) => {
           let val = res.data.data.response;
           let arr = val.giataHotelList;
+          console.log(arr);
           callback(arr);
           });
 
