@@ -193,10 +193,7 @@
         this.form.city_title = value.location.name;
       },
       fetch(value,callback){
-
-        let formData = new FormData();
-        formData.append('q',value);
-        this.$axios.post(`https://www.martireisen.at/service/engine/search/get`,formData).then((res) => {
+        this.$axios.post(`/service/engine/search/get`,{ q: value , type : 'hotelonly'}).then((res) => {
           let val = res.data.data.response;
           let arr = val.giataHotelList;
           callback(arr);

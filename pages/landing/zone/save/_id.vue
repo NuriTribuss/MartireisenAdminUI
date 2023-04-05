@@ -208,7 +208,6 @@ export default {
         tinymce.EditorManager.execCommand('mceRemoveEditor', false, 'editor')
         tinymce.EditorManager.execCommand('mceAddEditor', false, 'editor')
     },
-
     fetch() {
       return this.$axios
         .get("/landing/zone/" + this.$route.params.id)
@@ -320,18 +319,31 @@ export default {
         this.value = value;
         this.fetchHotel(value, data => (this.searchData = data));
       },
-      handleSelect(value,a,b){
+      handleSelect(value){
+        if(this.form.related_ids){
+          this.form.related_ids = this.form.related_ids + ',' + value.code;
+        }
+        else{
+          this.form.related_ids = value.code;
+        }
+        console.log(value);
         //this.form.name = value.name;
-       // this.form.gid_id = value.code;
+       // this.form.gid_id = value.code; 
       },
       fetchHotel(value,callback){
 
-        let formData = new FormData();
-        formData.append('q',value);
-        this.$axios.post(`/service/engine/search/get`,formData).then((res) => {
+         // $fetch(
+        //   `/api/engine/search/get/`, { method : "POST" , body : { q: this.query , type : 'hotel'} }
+        // ).then((res) => {
+        //   let val = res.data.response;
+        //   let arr = res.data.response.giataHotelList;
+        //   console.log(arr);
+        //   callback(arr);
+        // });
+        this.$axios.post(`/service/engine/search/get`,{ q: value , type : 'hotelonly'}).then((res) => {
+        //this.$axios.post(`/engine/search/get`,{ q: value , type : 'hotelonly'}).then((res) => {
           let val = res.data.data.response;
           let arr = val.giataHotelList;
-          console.log(arr);
           callback(arr);
           });
 
