@@ -6,7 +6,7 @@
         <li :class="$style.item" v-for="(page, pIndex) in result.results">
           <nuxt-link :to="result.route.replace('$1', page.uuid)" :class="$style.itemLink">
             <div :class="$style.itemLink" class="mr-3">
-              <i :class="$style.itemIcon" class="fe fe-file" />
+              <i :class="$style.itemIcon" class="la la-file" />
             </div>
             <div>
               <div class="text-blue">{{ page.name }}</div>

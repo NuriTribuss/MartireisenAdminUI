@@ -8,7 +8,7 @@
           <a
             href="javascript: void(0);"
             :class="$style.air__sidebar__close"
-            class="fe fe-x-circle"
+            class="la la-x-circle"
             @click="toggleSidebar()"
           />
          
@@ -170,7 +170,7 @@
       class="btn btn-rounded btn-light text-nowrap text-dark font-weight-bold font-size-18"
       style="width: 42px;height: 41px;"
     >
-      <i class="fe fe-settings text-blue mr-md-2" />
+      <i class="la la-settings text-blue mr-md-2" />
       <!-- <span class="d-none d-md-inline">Settings</span> -->
     </a>
   </div>

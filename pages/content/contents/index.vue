@@ -4,7 +4,7 @@
       <h5>{{ $t('pages.contents.title')}}</h5>
       <nuxt-link to="/content/contents/categories">
         <a-button type="primary">
-          <i class="fe fe-list"></i> {{ $t('btn.category_edit') }}
+          <i class="la la-list"></i> {{ $t('btn.category_edit') }}
         </a-button>
       </nuxt-link>
     </div>
@@ -37,7 +37,7 @@
         <div class="text-right">
           <nuxt-link :to="'contents/save/'+record.id">
             <a-button type="primary" size="small" class="mr-1">
-              <i class="fe fe-edit text-white"></i>
+              <i class="la la-edit text-white"></i>
             </a-button>
           </nuxt-link>
           <a-popconfirm :title="$t('messages.sure_delete')" @confirm="deleteRecord(record.id)">

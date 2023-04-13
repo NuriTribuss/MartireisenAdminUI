@@ -18,11 +18,11 @@
         </div>
         <hr />
         <span>
-          <i class="fe fe-calendar mr-2"></i> {{summary.date}} 
+          <i class="la la-calendar mr-2"></i> {{summary.date}} 
         </span>
         <nuxt-link tag="a" class="text-primary float-right" to="/booking/orders/">
           {{ $t('common.view-all')}}
-          <i class="fe fe-arrow-right ml-1"></i>
+          <i class="la la-arrow-right ml-1"></i>
         </nuxt-link>
       </div>
     </div>

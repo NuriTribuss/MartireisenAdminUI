@@ -4,7 +4,7 @@
       <h5>
         {{ $t('common.edit')}}
         <a :href="env+'/'+form.url" target="_blank" v-if="$route.params.id">
-          <i class="fe fe-external-link"></i>
+          <i class="la la-external-link"></i>
         </a>
       </h5>
       <div class="d-flex">
@@ -21,7 +21,7 @@
 
         <nuxt-link to="/content/pages">
           <a-button type="primary">
-            <i class="fe fe-arrow-left"></i>
+            <i class="la la-arrow-left"></i>
             {{ $t('btn.back') }}
           </a-button>
         </nuxt-link>
@@ -43,7 +43,7 @@
                     <option v-for="(domain,index) in domains" v-bind:key="index">{{domain.name}}</option>
                   </select>
                   <span slot="tab">
-                    <i class="fe fe-edit"></i>
+                    <i class="la la-edit"></i>
                     {{$t('pages.contents.save.content')}}
                   </span>
                   <div v-show="currentDomain == 'martireisen.at'">
@@ -96,7 +96,7 @@
                 </a-tab-pane>
                 <a-tab-pane key="2" forceRender>
                   <span slot="tab">
-                    <i class="fe fe-settings"></i>
+                    <i class="la la-settings"></i>
                     {{$t('pages.contents.save.seoSettings')}}
                   </span>
                   <a-form-item :label-col="{ span: 24 }" :wrapper-col="{ span: 24 }">
@@ -131,7 +131,7 @@
               </a-form-item>
               <a-form-item>
                 <a-button type="primary" class="save-btn w-100" @click="passes(onSubmit)">
-                  <i class="fe fe-save mr-2"></i>
+                  <i class="la la-save mr-2"></i>
                   {{ $t('btn.save')}}
                 </a-button>
               </a-form-item>

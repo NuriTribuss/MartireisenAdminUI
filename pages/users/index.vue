@@ -4,7 +4,7 @@
       <h5>{{ $t('pages.users.title')}}</h5>
       <nuxt-link to="/users/groups">
         <a-button type="primary">
-          <i class="fe fe-list"></i> {{ $t('pages.groups.title') }}
+          <i class="la la-list"></i> {{ $t('pages.groups.title') }}
         </a-button>
       </nuxt-link>
     </div>
@@ -25,10 +25,10 @@
 
       <span slot="id" slot-scope="record">
         <a-button @click="passChange(record.id,record.username)" class="mr-1" size="small" type="primary">
-                <i class="fe fe-lock text-white"></i>
+                <i class="la la-lock text-white"></i>
          </a-button>
          <a-button @click="fetchUser(record.id)" class="mr-1" size="small" type="primary">
-                <i class="fe fe-edit text-white"></i>
+                <i class="la la-edit text-white"></i>
          </a-button>
         <a-popconfirm :title="$t('messages.sure_delete')" @confirm="deleteRecord(record.id)">
               <a-button class="mr-2" size="small" type="danger">
@@ -98,7 +98,7 @@
         <div class="drawer-bottom">
           <a-button @click="onClose" class="mr-2">{{$t('btn.cancel')}}</a-button>
           <a-button :loading="loading" @click="passes(onSubmit)" class="w-50" type="primary">
-            <i class="fe fe-save mr-2"></i>
+            <i class="la la-save mr-2"></i>
             {{$t('btn.save')}}
           </a-button>
         </div>
@@ -119,7 +119,7 @@
         <div class="drawer-bottom" style="position: unset">
           <a-button @click="onClose" class="mr-2">{{$t('btn.cancel')}}</a-button>
           <a-button :loading="loading" @click="passes(changePass)" class="w-50" type="primary">
-            <i class="fe fe-save mr-2"></i>
+            <i class="la la-save mr-2"></i>
             {{$t('btn.save')}}
           </a-button>
         </div>

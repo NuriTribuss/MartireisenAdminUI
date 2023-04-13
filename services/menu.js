@@ -7,31 +7,31 @@ export const getMenuData = [
     {
       title: 'Gösterge Paneli',
       key: 'dashboards',
-      icon: 'fe fe-activity',
+      icon: 'la la-activity',
       url: '/',
     },
     {
       title: 'Rezervasyonlar',
       key: 'orders',
-      icon: 'fe fe-shopping-cart',
+      icon: 'la la-shopping-cart',
       url: '/booking/orders',
       children: [
         {
           title: 'Tüm Rezervasyonlar',
           key: 'orders',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/booking/orders',
         },
      /*   {
           title: 'İade / İptal İşlemleri',
           key: 'order-cancel',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/booking/orders/cancel',
         },*/
         {
           title: 'Ödeme Kayıtları',
           key: 'order-transaction',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/booking/orders/transaction',
         },
       ],
@@ -39,19 +39,19 @@ export const getMenuData = [
     {
       title: 'Üyelik / Abonelik',
       key: 'customers',
-      icon: 'fe fe-user',
+      icon: 'la la-user',
       // url: '/member',
       children: [
         {
           title: 'Tüm Üyeler',
           key: 'customers-list',
-          icon: 'fe fe-user',
+          icon: 'la la-user',
           url: '/members/members',
         },
         {
           title: 'Newsletter Abonelikleri',
           key: 'customers-fields',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/members/subscribers',
         },
       ],
@@ -60,19 +60,19 @@ export const getMenuData = [
     {
       title: 'Marketing',
       key: 'marketing',
-      icon: 'fe fe-tag',
+      icon: 'la la-tag',
       count: 6,
       children: [
         {
           title: 'Promosyon Kodları',
           key: 'gift',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/marketing/coupon',
         },
         {
           title: 'Affilate Link Oluşturma',
           key: 'ecommerce-feed',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/marketing/affilate',
         }
       ],
@@ -85,37 +85,37 @@ export const getMenuData = [
     {
       title: 'Tatil / Paket Tur',
       key: 'travel',
-      icon: 'fe fe-briefcase',
+      icon: 'la la-briefcase',
       count: 6,
       children: [
         {
           title: 'Arama Motoru',
           key: 'travel-search-engine',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/booking/engine/search',
         },
         {
           title: 'Bölgeler',
           key: 'travel-region',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/booking/engine/region',
         },
       /*  {
           title: 'Oteller',
           key: 'travel-otel',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/booking/engine/hotel',
         },*/
         {
           title: 'Havalimanları',
           key: 'travel-airport',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/booking/engine/airport',
         },
         {
           title: 'Operatörler',
           key: 'travel-operator',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/booking/engine/operator',
         }
       ],
@@ -123,13 +123,13 @@ export const getMenuData = [
     {
       title: 'Helal Booking',
       key: 'halal',
-      icon: 'fe fe-moon',
+      icon: 'la la-moon',
       count: 6,
       children: [
         {
           title: 'Oteller',
           key: 'halal-otel',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/booking/halal/hotel',
         },
       ],
@@ -137,31 +137,31 @@ export const getMenuData = [
     {
       title: 'Tur Sistemi',
       key: 'tour',
-      icon: 'fe fe-compass',
+      icon: 'la la-compass',
       count: 6,
       children: [
         {
           title: 'Turları Yönet',
           key: 'all-tour',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/booking/tour',
         },
         {
           title: 'Tur Periyodları',
           key: 'tour-report',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/booking/tour/report',
         },
         {
           title: 'Tur Kategorileri',
           key: 'tour-type',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/booking/tour/type',
         },
         {
           title: 'Tur Sayfası Sekmeleri',
           key: 'tour-tab',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/booking/tour/tab',
         }
       ],
@@ -174,60 +174,60 @@ export const getMenuData = [
     {
       title: 'Yazılar / Blog',
       key: 'contents',
-      icon: 'fe fe-edit',
+      icon: 'la la-edit',
       url: '/content/contents',
     },
     {
       title: 'İçerik Sayfaları',
       key: 'pages',
-      icon: 'fe fe-book-open',
+      icon: 'la la-book-open',
       url: '/content/pages',
     },
     {
       title: 'Müşteri Hizmetleri',
       key: 'customer_services',
-      icon: 'fe fe-life-buoy',
+      icon: 'la la-life-buoy',
       url: '/content/support',
     },
      {
       title: 'Şubeler',
       key: 'branch',
-      icon: 'fe fe-tablet',
+      icon: 'la la-tablet',
       url: '/module/branch',
     },
     {
       title: 'Menüler',
       key: 'modules',
-      icon: 'fe fe-list',
+      icon: 'la la-list',
       url: '/design/menu',
     },
     {
       title: 'Landing Sayfaları',
       key: 'landing',
-      icon: 'fe fe-wind',
+      icon: 'la la-wind',
       children: [
         {
           title: 'Temel Sayfalar',
           key: 'landing-base',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/landing/base',
         },
         {
           title: 'Bölge Sayfaları',
           key: 'landing-region',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/landing/zone',
         },
         {
           title: 'Otel Detay Sayfaları',
           key: 'landing-otel',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/landing/otel/',
         },
         {
           title: 'Seo Alt Linkler',
           key: 'landing-link',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/landing/footer/',
         },
         
@@ -238,31 +238,31 @@ export const getMenuData = [
     {
       title: 'Anasayfa',
       key: 'design-home',
-      icon: 'fe fe-compass',
+      icon: 'la la-compass',
       count: 6,
       children: [
         {
           title: 'Seo Metinleri',
           key: 'design-home-seo-text',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/homepage/seo/text',
         },
         {
           title: 'Seo Linkleri',
           key: 'design-home-seo-link',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/homepage/seo/link',
         },
         {
           title: 'Tab Yönetimi',
           key: 'design-home-tab',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/homepage/tab',
         },
         {
           title: 'Sevilen Oteller',
           key: 'design-home-favourite',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/homepage/favourite',
         },
         
@@ -277,19 +277,19 @@ export const getMenuData = [
     {
       title: 'Yerelleştirme',
       key: 'generalLocalization',
-      icon: 'fe fe-compass',
+      icon: 'la la-compass',
       count: 6,
       children: [
         {
           title: 'Diller',
           key: 'localization.languages',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/localization/languages',
         },
         {
           title: 'Para Birimi',
           key: 'localization.currencies',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/localization/currencies',
         },
         
@@ -299,18 +299,18 @@ export const getMenuData = [
     {
       title: 'Kullanıcılar',
       key: 'users',
-      icon: 'fe fe-users',
+      icon: 'la la-users',
       children: [
         {
           title: 'Kullanıcılar',
           key: 'user-list',
-          icon: 'fe fe-user',
+          icon: 'la la-user',
           url: '/users',
         },
         {
           title: 'Kullanıcı Grupları',
           key: 'users-groups',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/users/groups',
         },
       ],
@@ -319,39 +319,39 @@ export const getMenuData = [
     {
       title: 'Ayarlar',
       key: 'settings',
-      icon: 'fe fe-settings',
+      icon: 'la la-settings',
       url: '/sys/settings',
       children: [
         {
           title: 'ödeme yöntemleri ',
           key: 'settings.payment',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/payment-methods',
         },
         {
           title: 'Genel Ayarlar',
           key: 'settings.sys',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/sys/settings/2',
         },
         
         {
           title: 'Sosyal Medya',
           key: 'sys.settings.3',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/sys/settings/8',
         },
       
         {
           title: 'Bildirimler(Mail/Sms)',
           key: 'sys.settings.6',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/sys/notification',
         },
         {
           title: 'Link Yönetimi',
           key: 'sys.settings.7',
-          icon: 'fe fe-chevrons-right',
+          icon: 'la la-chevrons-right',
           url: '/sys/settings/link',
         }
     

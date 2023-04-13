@@ -6,10 +6,10 @@
         <div class="clearfix">
           <a-button-group class="float-right">
             <a-button v-on:click="insert({id :0})">
-              <i class="fe fe-plus"></i>
+              <i class="la la-plus"></i>
             </a-button>
             <a-button v-on:click="refresh">
-              <i class="fe fe-refresh-ccw"></i>
+              <i class="la la-refresh-ccw"></i>
             </a-button>
           </a-button-group>
         </div>
@@ -45,7 +45,7 @@
           <a-table-column :title="$t('btn.action')" key="action" width="160px">
             <template slot-scope="text, record">
               <a-button class="mr-1" size="small" type="primary" v-on:click="fetchField(record)">
-                <i class="fe fe-edit text-white"></i>
+                <i class="la la-edit text-white"></i>
               </a-button>
 
               <a-popconfirm :title="$t('messages.sure_delete')" @confirm="deleteRecord(record.id)">
@@ -112,10 +112,10 @@
             <div class="clearfix">
               <a-button-group class="float-right">
                 <a-button v-on:click="insertStation({id :0 , period_id : form.id})">
-                  <i class="fe fe-plus"></i>
+                  <i class="la la-plus"></i>
                 </a-button>
                 <a-button v-on:click="refreshStation(form.id)">
-                  <i class="fe fe-refresh-ccw"></i>
+                  <i class="la la-refresh-ccw"></i>
                 </a-button>
               </a-button-group>
             </div>
@@ -153,7 +153,7 @@
                     type="primary"
                     v-on:click="fetchFieldStation(a)"
                   >
-                    <i class="fe fe-edit text-white"></i>
+                    <i class="la la-edit text-white"></i>
                   </a-button>
 
                   <a-popconfirm :title="$t('messages.sure_delete')" @confirm="deleteStation(a.id)">
@@ -215,7 +215,7 @@
               <div class="drawer-bottom">
                 <a-button class="mr-2" @click="onCloseStation">{{$t('btn.cancel')}}</a-button>
                 <a-button :loading="loading" class="w-50" @click="onSubmitStation" type="primary">
-                  <i class="fe fe-save mr-2"></i>
+                  <i class="la la-save mr-2"></i>
                   {{$t('btn.save')}}
                 </a-button>
               </div>
@@ -225,7 +225,7 @@
           <div class="drawer-bottom">
             <a-button class="mr-2" @click="onClose">{{$t('btn.cancel')}}</a-button>
             <a-button :loading="loading" class="w-50" @click="passes(onSubmit)" type="primary">
-              <i class="fe fe-save mr-2"></i>
+              <i class="la la-save mr-2"></i>
               {{$t('btn.save')}}
             </a-button>
           </div>

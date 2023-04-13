@@ -10,7 +10,7 @@
         ></div>
         <div :class="$style.itemPicContainer">
           <div :class="$style.itemPic" class="bg-primary" />
-          <i :class="$style.itemIcon" class="text-white fe fe-shopping-cart" />
+          <i :class="$style.itemIcon" class="text-white la la-shopping-cart" />
         </div>
         <div class="w-100">
           <div>
@@ -18,7 +18,7 @@
             
           </div>
           <div class="justify-content-between w-100">
-          <small class="text-muted"><i class="fe fe-calendar mr-1" ></i> {{ $moment(act.created_at, "YYYYMMDD").fromNow()  }}</small>
+          <small class="text-muted"><i class="la la-calendar mr-1" ></i> {{ $moment(act.created_at, "YYYYMMDD").fromNow()  }}</small>
           <small class="text-muted float-right"><i class="fa fa-coins mr-1" ></i> ({{ act.order_total+act.order_currency}})</small>
           </div>
         </div>

@@ -29,7 +29,7 @@
             <h2>{{$t('common.protect_area')}}</h2>
             <p>{{$t('common.protect_area_msg')}}</p>
               <a-button type="primary" class="m-auto" @click="$router.back();">
-            <i class="fe fe-arrow-left mr-2"></i>
+            <i class="la la-arrow-left mr-2"></i>
             {{ $t('btn.back') }}
           </a-button>
           </div>

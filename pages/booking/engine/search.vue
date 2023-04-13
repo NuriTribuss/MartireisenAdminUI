@@ -40,7 +40,7 @@
             <td>{{ element._source.type }}</td>
             <td>{{ element._source.name }}</td>
             <td>{{ element._source.keywords }} </td>
-            <td><button class="btn btn-success btn-sm" v-on:click="fetchEl(element)"><i class="fe fe-edit"></i></button></td>
+            <td><button class="btn btn-success btn-sm" v-on:click="fetchEl(element)"><i class="la la-edit"></i></button></td>
           </tr>
         </tbody>
       </table>
@@ -98,7 +98,7 @@
         <div class="drawer-bottom">
           <a-button @click="onClose" class="mr-2">{{$t('btn.cancel')}}</a-button>
           <a-button :loading="loading" @click="passes(onSubmit)" class="w-50" type="primary">
-            <i class="fe fe-save mr-2"></i>
+            <i class="la la-save mr-2"></i>
             {{$t('btn.save')}}
           </a-button>
         </div>

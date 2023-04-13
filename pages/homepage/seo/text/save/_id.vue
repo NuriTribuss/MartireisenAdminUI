@@ -18,7 +18,7 @@
         </a-select>
         <nuxt-link to="/homepage/seo/text">
           <a-button type="primary">
-            <i class="fe fe-arrow-left"></i>
+            <i class="la la-arrow-left"></i>
             {{ $t('btn.back') }}
           </a-button>
         </nuxt-link>
@@ -69,7 +69,7 @@
               </a-form-item>
               <a-form-item>
                 <a-button type="primary" class="save-btn w-100" @click="passes(onSubmit)">
-                  <i class="fe fe-save mr-2"></i>
+                  <i class="la la-save mr-2"></i>
                   {{ $t('btn.save')}}
                 </a-button>
               </a-form-item>

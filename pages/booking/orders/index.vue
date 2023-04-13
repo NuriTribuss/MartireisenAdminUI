@@ -49,7 +49,7 @@
       <span slot="id" slot-scope="record">
         <nuxt-link :to="'/booking/orders/'+record.value">
           <a-button class="mr-2" size="small" type="primary">
-            <i class="fe fe-search"></i>
+            <i class="la la-search"></i>
           </a-button>
         </nuxt-link>
       </span>

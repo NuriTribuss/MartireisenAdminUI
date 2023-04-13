@@ -4,7 +4,7 @@
       <h5 class="float-left">{{ $t('menu.notification')}}</h5>
       <nuxt-link to="/sys/settings">
         <a-button type="primary">
-          <i class="fe fe-arrow-left"></i> Geri
+          <i class="la la-arrow-left"></i> Geri
         </a-button>
       </nuxt-link>
     </div>
@@ -22,7 +22,7 @@
                 v-for="(template,subindex) in group.templates"
               >
                 <div>
-                  <span><i class="fe fe-chevron-right" style="position:relative;top:2px"></i> {{ template.name}}</span>
+                  <span><i class="la la-chevron-right" style="position:relative;top:2px"></i> {{ template.name}}</span>
                 </div>
                 <div>
                   <nuxt-link
@@ -30,14 +30,14 @@
                     :to="'/sys/notification/template/'+template.id+'/mail'"
                     class="ant-btn ant-btn-primary ant-btn-md min-w-30px mr-2"
                   >
-                    <i class="fe fe-mail text-sm text-white"></i>
+                    <i class="la la-mail text-sm text-white"></i>
                   </nuxt-link>
                   <nuxt-link
                     tag="button"
                     :to="'/sys/notification/template/'+template.id+'/sms'"
                     class="ant-btn ant-btn-primary ant-btn-md min-w-30px mr-2"
                   >
-                    <i class="fe fe-message-square text-sm text-white"></i>
+                    <i class="la la-message-square text-sm text-white"></i>
                   </nuxt-link>
                 </div>
               </li>

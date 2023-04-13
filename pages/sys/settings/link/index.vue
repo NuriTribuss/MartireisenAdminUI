@@ -46,7 +46,7 @@
             size="small"
             type="primary"
           >
-            <i class="fe fe-edit text-white"></i>
+            <i class="la la-edit text-white"></i>
           </a-button>
         </div>
       </span>
@@ -120,7 +120,7 @@
             class="w-50"
             type="primary"
           >
-            <i class="fe fe-save mr-2"></i>
+            <i class="la la-save mr-2"></i>
             {{ $t("btn.save") }}
           </a-button>
         </div>
@@ -165,7 +165,7 @@
             class="w-50"
             type="primary"
           >
-            <i class="fe fe-save mr-2"></i>
+            <i class="la la-save mr-2"></i>
             {{ $t("btn.save") }}
           </a-button>
         </div>

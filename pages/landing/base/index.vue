@@ -34,11 +34,11 @@
 
       <span slot="action" slot-scope="record">
           <a-button type="primary" size="small" class="mr-1" target="_blank" :href="baseUrl+'/'+record.translate.url">
-          <i class="fe fe-link text-white"></i>
+          <i class="la la-link text-white"></i>
         </a-button>
         <nuxt-link :to="'/landing/base/save/'+record.id">
         <a-button type="primary" size="small" class="mr-1">
-          <i class="fe fe-edit text-white"></i>
+          <i class="la la-edit text-white"></i>
         </a-button>
         </nuxt-link>
        

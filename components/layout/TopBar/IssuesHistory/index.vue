@@ -1,7 +1,7 @@
 <template>
   <a-dropdown :trigger="['click']" placement="bottomLeft">
     <div :class="$style.dropdown">
-      <i class="fe fe-help-circle" :class="$style.icon"></i>
+      <i class="la la-help-circle" :class="$style.icon"></i>
       <span class="d-none d-xl-inline">{{ $t('help.title')}}</span>
     </div>
     <a-menu slot="overlay">

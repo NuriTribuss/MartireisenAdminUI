@@ -1,7 +1,7 @@
 <template>
   <a-dropdown :trigger="['click']" placement="bottomLeft">
     <div :class="$style.dropdown">
-      <i class="fe fe-menu" :class="$style.icon"></i>
+      <i class="la la-menu" :class="$style.icon"></i>
       <span class="d-none d-xl-inline">Actions</span>
     </div>
     <div slot="overlay">

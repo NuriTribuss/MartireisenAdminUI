@@ -4,7 +4,7 @@
       <h5>{{ $t('common.edit')}}</h5>
       <nuxt-link to="/">
         <a-button type="primary">
-          <i class="fe fe-arrow-left"></i> Geri
+          <i class="la la-arrow-left"></i> Geri
         </a-button>
       </nuxt-link>
     </div>
@@ -15,7 +15,7 @@
           <a-tabs defaultActiveKey="1" class="iconic-tab">
             <a-tab-pane key="1">
               <span slot="tab">
-                <i class="fe fe-edit"></i>
+                <i class="la la-edit"></i>
                 {{$t('pages.contents.save.content')}}
               </span>
               <a-form class="form-vertical pd-20" layout="vertical">
@@ -57,7 +57,7 @@
                 </a-form-item>
                 <a-form-item class="text-right">
                   <a-button type="primary" class="save-btn">
-                    <i class="fe fe-save"></i>
+                    <i class="la la-save"></i>
                     {{$t('btn.save')}}
                   </a-button>
                 </a-form-item>
@@ -65,7 +65,7 @@
             </a-tab-pane>
             <a-tab-pane key="2" forceRender>
               <span slot="tab">
-                <i class="fe fe-settings"></i>
+                <i class="la la-settings"></i>
                 {{$t('pages.contents.save.seoSettings')}}
               </span>
               <a-form class="form-vertical pd-20" layout="vertical">
@@ -107,7 +107,7 @@
                 </a-form-item>
                 <a-form-item class="text-right">
                   <a-button type="primary" class="save-btn">
-                    <i class="fe fe-save"></i>
+                    <i class="la la-save"></i>
                     {{$t('btn.save')}}
                   </a-button>
                 </a-form-item>

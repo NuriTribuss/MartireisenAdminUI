@@ -4,7 +4,7 @@
       <h5>{{ $t('settings.seo.title')}}</h5>
       <nuxt-link to="/sys/settings">
         <a-button type="primary">
-          <i class="fe fe-arrow-left"></i>
+          <i class="la la-arrow-left"></i>
           {{$t('common.back')}}
         </a-button>
       </nuxt-link>
@@ -35,7 +35,7 @@
         <span slot="id" slot-scope="record">
           <nuxt-link to="seo/detail">
             <a-button type="primary" size="small" class="mr-2">
-              <i class="fe fe-edit"></i>
+              <i class="la la-edit"></i>
             </a-button>
           </nuxt-link>
         </span>

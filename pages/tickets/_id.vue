@@ -4,7 +4,7 @@
       <h5>ID : #{{ticket.code}}</h5>
       <nuxt-link to="/tickets">
         <a-button type="primary">
-          <i class="fe fe-arrow-left"></i> Geri
+          <i class="la la-arrow-left"></i> Geri
         </a-button>
       </nuxt-link>
     </div>
@@ -23,7 +23,7 @@
                   >{{ticket.company_name}}
                  
                   </div>
-                  <i class="fe fe-mail mr-2"></i>{{company.email}} 
+                  <i class="la la-mail mr-2"></i>{{company.email}} 
                 </div>
                 <!---->
               </a>
@@ -83,7 +83,7 @@
                     @confirm="closeMessage"
                   >
                     <a href="javascript: void(0);" class="btn btn-sm btn-light mr-2">
-                      <i class="fe fe-unlock" />
+                      <i class="la la-unlock" />
                     </a>
                   </a-popconfirm>
                 </a-tooltip>
@@ -136,7 +136,7 @@
                   type="button"
                   @click="createMessage"
                 >
-                  <i class="mr-2 fe fe-send align-middle" />Gönder
+                  <i class="mr-2 la la-send align-middle" />Gönder
                 </button>
               </div>
             </div>

@@ -18,7 +18,7 @@
       <span slot="id" slot-scope="record">
          <nuxt-link :to="'/booking/tour/'+record.id">
             <a-button type="primary" size="small" class="mr-1">
-              <i class="fe fe-edit text-white"></i>
+              <i class="la la-edit text-white"></i>
             </a-button>
           </nuxt-link>
           <a-popconfirm :title="$t('messages.sure_delete')" @confirm="deleteRecord(record.id)">

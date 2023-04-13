@@ -18,12 +18,12 @@
       <a-menu-divider />
       <a-menu-item>
         <router-link to="/profile">
-          <i :class="$style.menuIcon" class="fe fe-user"></i> Edit Profile
+          <i :class="$style.menuIcon" class="la la-user"></i> Edit Profile
         </router-link>
       </a-menu-item>
       <a-menu-item>
         <a href="javascript: void(0);" @click="logout">
-          <i :class="$style.menuIcon" class="fe fe-log-out"></i> {{$t('auth.logout')}}
+          <i :class="$style.menuIcon" class="la la-log-out"></i> {{$t('auth.logout')}}
         </a>
       </a-menu-item>
     </a-menu>

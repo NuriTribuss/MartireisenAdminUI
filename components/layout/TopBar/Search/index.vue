@@ -1,7 +1,7 @@
 <template>
   <a-dropdown :trigger="['click']" placement="bottomLeft">
     <div :class="$style.searchContainer">
-      <i class="fe fe-search" :class="$style.searchIcon"></i>
+      <i class="la la-search" :class="$style.searchIcon"></i>
       <input :class="$style.searchInput" v-model="search" type="text" placeholder="Arama Yap ..." />
     </div>
     <div slot="overlay" class="card air__utils__shadow width-330">

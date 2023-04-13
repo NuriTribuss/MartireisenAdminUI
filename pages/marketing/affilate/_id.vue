@@ -5,7 +5,7 @@
       <div class="d-flex">
         <nuxt-link to="/marketing/affilate">
           <a-button type="primary">
-            <i class="fe fe-arrow-left"></i>
+            <i class="la la-arrow-left"></i>
             {{ $t('btn.back')}}
           </a-button>
         </nuxt-link>
@@ -123,7 +123,7 @@
                   </a-form-item>
                   <a-form-item>
                   <a-button @click="passes(onSubmit)" class="save-btn w-100" type="primary">
-                    <i class="fe fe-save mr-2"></i>
+                    <i class="la la-save mr-2"></i>
                     {{ $t('btn.save')}}
                   </a-button>
                 </a-form-item>

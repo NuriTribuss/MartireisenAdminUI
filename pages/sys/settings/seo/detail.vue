@@ -4,7 +4,7 @@
       <h5>{{ $t('common.edit')}}</h5>
       <nuxt-link to="/">
         <a-button type="primary">
-          <i class="fe fe-arrow-left"></i> Geri
+          <i class="la la-arrow-left"></i> Geri
         </a-button>
       </nuxt-link>
     </div>
@@ -57,7 +57,7 @@
 
                     <a-form-item>
                       <a-button type="primary" class="save-btn">
-                        <i class="fe fe-save mr-2"></i>
+                        <i class="la la-save mr-2"></i>
                         {{ $t('btn.save')}}
                       </a-button>
                     </a-form-item>
@@ -111,7 +111,7 @@
 
                     <a-form-item>
                       <a-button type="primary" class="save-btn">
-                        <i class="fe fe-save mr-2"></i>
+                        <i class="la la-save mr-2"></i>
                         {{ $t('btn.save')}}
                       </a-button>
                     </a-form-item>
@@ -165,7 +165,7 @@
 
                     <a-form-item>
                       <a-button type="primary" class="save-btn">
-                        <i class="fe fe-save mr-2"></i>
+                        <i class="la la-save mr-2"></i>
                         {{ $t('btn.save')}}
                       </a-button>
                     </a-form-item>

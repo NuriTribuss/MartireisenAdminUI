@@ -22,7 +22,7 @@
       
       <span slot="action" slot-scope="record">
          <a-button @click="fetch(record)" class="mr-1" size="small" type="primary">
-            <i class="fe fe-edit text-white"></i>
+            <i class="la la-edit text-white"></i>
           </a-button>
         <a-popconfirm :title="$t('messages.sure_delete')" @confirm="deleteRecord(record.id)">
           <a-button class="mr-2" size="small" type="danger">
@@ -69,7 +69,7 @@
         <div class="drawer-bottom">
           <a-button @click="onClose" class="mr-2">{{$t('btn.cancel')}}</a-button>
           <a-button :loading="loading" @click="passes(onSubmit)" class="w-50" type="primary">
-            <i class="fe fe-save mr-2"></i>
+            <i class="la la-save mr-2"></i>
             {{$t('btn.save')}}
           </a-button>
         </div>

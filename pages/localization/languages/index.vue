@@ -35,7 +35,7 @@
        <span slot="action" slot-scope="record">
         <nuxt-link :to="'/localization/languages/'+record.id+'/translate'">
           <a-button type="primary" size="small" class="mr-2">
-            <i class="fe fe-list"></i>
+            <i class="la la-list"></i>
           </a-button>
         </nuxt-link>
       </span>

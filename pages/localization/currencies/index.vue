@@ -35,7 +35,7 @@
         <div class="drawer-bottom">
           <a-button @click="visibleCurrencyModal.show = false" class="mr-2">{{$t('btn.cancel')}}</a-button>
           <a-button :loading="visibleCurrencyModal.loading" @click="passes(updateCurrency)" class="w-50" type="primary">
-            <i class="fe fe-save mr-2"></i>
+            <i class="la la-save mr-2"></i>
             {{$t('btn.save')}}
           </a-button>
         </div>
@@ -72,7 +72,7 @@
       </span>
       <span slot="action" slot-scope="record">
         <a-button @click="editCurrency(record)" class="mr-1" size="small" type="primary">
-          <i class="fe fe-edit text-white"></i>
+          <i class="la la-edit text-white"></i>
         </a-button>
       </span>
     </vi-table>

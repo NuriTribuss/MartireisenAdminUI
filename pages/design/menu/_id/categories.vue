@@ -5,7 +5,7 @@
       <div class="d-flex">
         <nuxt-link to="/design/menu">
           <a-button type="primary">
-            <i class="fe fe-arrow-left"></i>
+            <i class="la la-arrow-left"></i>
             {{ $t('btn.back') }}
           </a-button>
         </nuxt-link>
@@ -37,7 +37,7 @@
             <a-icon type="plus" />
           </a-button>
           <a-button type="primary" size="small" class="mr-1" v-on:click="fetch(record)">
-            <i class="fe fe-edit text-white"></i>
+            <i class="la la-edit text-white"></i>
           </a-button>
 
           <a-popconfirm :title="$t('messages.sure_delete')" @confirm="deleteRecord(record.id)">
@@ -153,7 +153,7 @@
           <div class="drawer-bottom">
             <a-button class="mr-2" @click="onClose">{{$t('btn.cancel')}}</a-button>
             <a-button :loading="loading" class="w-50" @click="passes(onSubmit)" type="primary">
-              <i class="fe fe-save mr-2"></i>
+              <i class="la la-save mr-2"></i>
               {{$t('btn.save')}}
             </a-button>
           </div>

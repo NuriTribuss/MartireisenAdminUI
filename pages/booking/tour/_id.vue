@@ -5,7 +5,7 @@
       <div class="d-flex">
         <nuxt-link to="/booking/tour">
           <a-button type="primary">
-            <i class="fe fe-arrow-left"></i>
+            <i class="la la-arrow-left"></i>
             {{ $t('btn.back')}}
           </a-button>
         </nuxt-link>
@@ -17,7 +17,7 @@
         <a-tabs class="iconic-tab" defaultActiveKey="1" @change="tabChange">
           <a-tab-pane key="1">
             <span slot="tab">
-              <i class="fe fe-info"></i>
+              <i class="la la-info"></i>
               {{$t('pages.tour.tab_1')}}
             </span>
             <a-row :gutter="30">
@@ -175,7 +175,7 @@
 
                     <a-form-item>
                       <a-button @click="passes(onSubmit)" class="save-btn w-100" type="primary">
-                        <i class="fe fe-save mr-2"></i>
+                        <i class="la la-save mr-2"></i>
                         {{ $t('btn.save')}}
                       </a-button>
                     </a-form-item>
@@ -187,7 +187,7 @@
 
           <a-tab-pane key="2" v-if="isEditPage && !isTranslate">
             <span slot="tab">
-              <i class="fe fe-align-right"></i>
+              <i class="la la-align-right"></i>
               {{$t('pages.tour.tab_2')}}
             </span>
             <period-manager
@@ -199,7 +199,7 @@
           </a-tab-pane>
           <a-tab-pane key="3" v-if="isEditPage && !isTranslate">
             <span slot="tab">
-              <i class="fe fe-align-right"></i>
+              <i class="la la-align-right"></i>
               {{$t('pages.tour.tab_3')}}
             </span>
             <property-manager
@@ -211,7 +211,7 @@
           </a-tab-pane>
           <a-tab-pane key="4" v-if="isEditPage && !isTranslate">
             <span slot="tab">
-              <i class="fe fe-align-right"></i>
+              <i class="la la-align-right"></i>
               {{$t('pages.tour.tab_4')}}
             </span>
             <plan-manager
@@ -223,21 +223,21 @@
           </a-tab-pane>
           <a-tab-pane key="5" v-if="isEditPage && !isTranslate">
             <span slot="tab">
-              <i class="fe fe-image"></i>
+              <i class="la la-image"></i>
               {{$t('pages.tour.tab_5')}}
             </span>
             <image-manager :tour_id="$route.params.id" :product_data="data" ref="imagecomp"></image-manager>
           </a-tab-pane>
            <a-tab-pane key="6" v-if="isEditPage && !isTranslate">
             <span slot="tab">
-              <i class="fe fe-image"></i>
+              <i class="la la-image"></i>
               {{$t('pages.tour.tab_6')}}
             </span>
             <video-manager :tour_id="$route.params.id" :product_data="data" ></video-manager>
           </a-tab-pane>
           <a-tab-pane key="7" v-if="isEditPage && !isTranslate">
             <span slot="tab">
-              <i class="fe fe-image"></i>
+              <i class="la la-image"></i>
               {{$t('pages.tour.tab_7')}}
             </span>
             <kroki-manager :tour_id="$route.params.id" :product_data="data" ></kroki-manager>

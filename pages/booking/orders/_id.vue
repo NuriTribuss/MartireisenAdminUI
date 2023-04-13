@@ -10,7 +10,7 @@
           to="/booking/orders"
         >
           <span>
-            <i class="fe fe-arrow-left"></i>
+            <i class="la la-arrow-left"></i>
             <span class>{{ $t("common.back") }}</span>
           </span>
         </nuxt-link>
@@ -84,16 +84,16 @@
                   v-bind:key="index"
                 >
                   <div>
-                    <i class="fe fe-arrow-up-right mr-2"></i>
+                    <i class="la la-arrow-up-right mr-2"></i>
                     {{ flight.departureAirportName }}
                     {{ flight.departureDate }} {{ flight.departureTime }}
                   </div>
                   <div>
-                    <i class="fe fe-map-pin mr-2"></i>
+                    <i class="la la-map-pin mr-2"></i>
                     {{ flight.arrivalAirportName }}
                   </div>
                   <div>
-                    <i class="fe fe-file mr-2"></i>
+                    <i class="la la-file mr-2"></i>
                     Uçuş Num.{{ flight.flightNumber }}
                   </div>
                 </div>
@@ -105,16 +105,16 @@
                   v-bind:key="index"
                 >
                   <div>
-                    <i class="fe fe-arrow-up-left mr-2"></i>
+                    <i class="la la-arrow-up-left mr-2"></i>
                     {{ flight.departureAirportName }}
                     {{ flight.departureDate }} {{ flight.departureTime }}
                   </div>
                   <div>
-                    <i class="fe fe-map-pin mr-2"></i>
+                    <i class="la la-map-pin mr-2"></i>
                     {{ flight.arrivalAirportName }}
                   </div>
                   <div>
-                    <i class="fe fe-file mr-2"></i>
+                    <i class="la la-file mr-2"></i>
                     Uçuş Num.{{ flight.flightNumber }}
                   </div>
                 </div>
@@ -145,15 +145,15 @@
               </div>
               <div class="col-6">
                 <div>
-                  <i class="fe fe-mail mr-2"></i>
+                  <i class="la la-mail mr-2"></i>
                   {{ data.email }}
                 </div>
                 <div>
-                  <i class="fe fe-phone mr-2"></i>
+                  <i class="la la-phone mr-2"></i>
                   {{ data.phone }}
                 </div>
                 <div>
-                  <i class="fe fe-map-pin mr-2"></i>
+                  <i class="la la-map-pin mr-2"></i>
                   {{ data.address }} / {{ data.city }} / {{ data.country }}
                 </div>
               </div>
@@ -212,7 +212,7 @@
                     <div
                       class="text-dark font-size-12 text-gray-6 text-truncate"
                     >
-                      <i class="fe fe-calendar mr-2"></i>
+                      <i class="la la-calendar mr-2"></i>
                       {{ person.birthday }}
                     </div>
                   </div>
@@ -263,7 +263,7 @@
                     <div
                       class="text-dark font-size-12 text-gray-6 text-truncate"
                     >
-                      <i class="fe fe-calendar mr-2"></i>
+                      <i class="la la-calendar mr-2"></i>
                       {{ person.birthday }}
                     </div>
                   </div>
@@ -406,7 +406,7 @@
             class="w-50"
             type="primary"
           >
-            <i class="fe fe-save mr-2"></i>
+            <i class="la la-save mr-2"></i>
             {{ $t("btn.save") }}
           </a-button>
         </div>

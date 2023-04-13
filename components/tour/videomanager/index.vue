@@ -44,7 +44,7 @@
           <div class="drawer-bottom">
             <a-button class="mr-2" @click="onClose">{{$t('btn.cancel')}}</a-button>
             <a-button :loading="loading" class="w-50" @click="passes(onSubmit)" type="primary">
-              <i class="fe fe-save mr-2"></i>
+              <i class="la la-save mr-2"></i>
               {{$t('btn.save')}}
             </a-button>
           </div>

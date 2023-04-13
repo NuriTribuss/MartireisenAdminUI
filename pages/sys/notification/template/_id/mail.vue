@@ -4,7 +4,7 @@
       <h5 class="float-left">{{ $t('menu.notification')}} > {{ parent.name }}</h5>
       <nuxt-link to="/sys/notification">
         <a-button type="primary">
-          <i class="fe fe-arrow-left"></i>
+          <i class="la la-arrow-left"></i>
           {{ $t('btn.back')}}
         </a-button>
       </nuxt-link>
@@ -16,13 +16,13 @@
           <a-menu v-model="currentMenu" mode="horizontal" class="grid-2 text-center">
             <a-menu-item key="mail">
               <nuxt-link to="/sys/notification/template/2/mail">
-                <i class="fe fe-mail"></i>
+                <i class="la la-mail"></i>
                 Mail
               </nuxt-link>
             </a-menu-item>
             <a-menu-item key="sms">
               <nuxt-link to="/sys/notification/template/2/sms">
-                <i class="fe fe-message-square"></i>
+                <i class="la la-message-square"></i>
                 Sms
               </nuxt-link>
             </a-menu-item>
@@ -67,7 +67,7 @@
 
             <a-form-item class="text-right">
               <a-button type="primary" class="save-btn" @click="save">
-                <i class="fe fe-save mr-2"></i>
+                <i class="la la-save mr-2"></i>
                 {{ $t('btn.save')}}
               </a-button>
             </a-form-item>

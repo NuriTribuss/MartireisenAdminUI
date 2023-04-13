@@ -40,7 +40,7 @@
       <span slot="id" slot-scope="record">
         <nuxt-link :to="'/member/members/'+record.value">
           <a-button class="mr-2" size="small" type="primary">
-            <i class="fe fe-search"></i>
+            <i class="la la-search"></i>
           </a-button>
         </nuxt-link>
         <a-popconfirm :title="$t('messages.sure_delete')" @confirm="deleteRecord(record.value)">

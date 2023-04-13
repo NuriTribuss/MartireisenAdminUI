@@ -10,7 +10,7 @@
       <a-tabs class="iconic-tab" defaultActiveKey="1">
         <a-tab-pane key="1">
           <span slot="tab">
-            <i class="fe fe-edit"></i>
+            <i class="la la-edit"></i>
             {{$t('customers.general_info')}}
           </span>
           <a-form class="form-vertical" layout="vertical">
@@ -18,7 +18,7 @@
               <a-col :span="12">
                 <a-form-item :label-col="{ span: 24 }" :wrapper-col="{ span: 24 }">
                   <a-divider orientation="left">
-                    <i class="fe fe-user mr-2"></i>
+                    <i class="la la-user mr-2"></i>
                     {{$t('input.name')}}
                   </a-divider>
                   <a-input v-model="account_form.firstname"></a-input>
@@ -27,7 +27,7 @@
               <a-col :span="12">
                 <a-form-item :label-col="{ span:24 }" :wrapper-col="{ span: 24 }">
                   <a-divider orientation="left">
-                    <i class="fe fe-user mr-2"></i>
+                    <i class="la la-user mr-2"></i>
                     {{$t('input.surname')}}
                   </a-divider>
                   <a-input v-model="account_form.lastname"></a-input>
@@ -36,7 +36,7 @@
               <a-col :span="12">
                 <a-form-item :label-col="{ span:24 }" :wrapper-col="{ span: 24 }">
                   <a-divider orientation="left">
-                    <i class="fe fe-smartphone mr-2"></i>
+                    <i class="la la-smartphone mr-2"></i>
                     {{$t('input.phone')}}
                   </a-divider>
                   <a-input v-model="account_form.mobile_phone"></a-input>
@@ -45,7 +45,7 @@
               <a-col :span="12">
                 <a-form-item :label-col="{ span:24 }" :wrapper-col="{ span: 24 }">
                   <a-divider orientation="left">
-                    <i class="fe fe-mail mr-2"></i>
+                    <i class="la la-mail mr-2"></i>
                     {{$t('input.website')}}
                   </a-divider>
                   <a-input v-model="account_form.website"></a-input>
@@ -54,7 +54,7 @@
             </a-row>
             <a-form-item>
               <a-button @click="onSubmit" class="save-btn mr-2" type="primary">
-                <i class="fe fe-save mr-2"></i>
+                <i class="la la-save mr-2"></i>
                 {{ $t('btn.save')}}
               </a-button>
             </a-form-item>
@@ -62,7 +62,7 @@
         </a-tab-pane>
         <a-tab-pane key="2">
           <span slot="tab">
-            <i class="fe fe-lock"></i>
+            <i class="la la-lock"></i>
             {{$t('pages_title.security')}}
           </span>
           <a-form class="form-vertical" layout="vertical">
@@ -70,7 +70,7 @@
               <a-col :span="24">
                 <a-form-item :label-col="{ span: 24 }" :wrapper-col="{ span: 24 }">
                   <a-divider orientation="left">
-                    <i class="fe fe-lock mr-2"></i>
+                    <i class="la la-lock mr-2"></i>
                     {{$t('input.password')}}
                   </a-divider>
                   <a-input-password :placeholder="$t('input.password')" v-model="password_form.password_old"/>
@@ -79,7 +79,7 @@
               <a-col :span="12">
                 <a-form-item :label-col="{ span:24 }" :wrapper-col="{ span: 24 }">
                   <a-divider orientation="left">
-                    <i class="fe fe-lock mr-2"></i>
+                    <i class="la la-lock mr-2"></i>
                     {{$t('input.password_new')}}
                   </a-divider>
                   <a-input-password :placeholder="$t('input.password_new')" v-model="password_form.password_new"/>
@@ -88,7 +88,7 @@
               <a-col :span="12">
                 <a-form-item :label-col="{ span:24 }" :wrapper-col="{ span: 24 }">
                   <a-divider orientation="left">
-                    <i class="fe fe-lock mr-2"></i>
+                    <i class="la la-lock mr-2"></i>
                     {{$t('input.password_again')}}
                   </a-divider>
                   <a-input-password :placeholder="$t('input.password_again')" v-model="password_form.password_again"/>
@@ -97,7 +97,7 @@
             </a-row>
             <a-form-item>
               <a-button @click="onSubmitPassword" class="save-btn mr-2" type="primary">
-                <i class="fe fe-save mr-2"></i>
+                <i class="la la-save mr-2"></i>
                 {{ $t('btn.save')}}
               </a-button>
             </a-form-item>
@@ -105,7 +105,7 @@
         </a-tab-pane>
         <a-tab-pane key="3">
           <span slot="tab">
-            <i class="fe fe-list"></i>
+            <i class="la la-list"></i>
             {{$t('pages_title.last_activities')}}
           </span>
           <a-table :columns="columns" :dataSource="logs" :pagination="false"/>

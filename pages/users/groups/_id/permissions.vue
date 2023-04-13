@@ -5,7 +5,7 @@
       <div class="d-flex">
         <nuxt-link to="/users/groups">
           <a-button type="primary">
-            <i class="fe fe-arrow-left"></i>
+            <i class="la la-arrow-left"></i>
             {{ $t('btn.back') }}
           </a-button>
         </nuxt-link>
@@ -18,7 +18,7 @@
                 <div class="card-header">
                     <div class="checkbox">
                         {{ permission.name }}<br>
-                        <a-button type="text" class="collapse-btn" v-on:click="collapseActive($event)">{{$t('pages.groups.permissions.detail')}} ({{permission.children.length}}) <i class="fe fe-chevron-down"></i> </a-button>
+                        <a-button type="text" class="collapse-btn" v-on:click="collapseActive($event)">{{$t('pages.groups.permissions.detail')}} ({{permission.children.length}}) <i class="la la-chevron-down"></i> </a-button>
                     </div>
                     <div class="switch green">
                         <span>{{$t('pages.groups.permissions.read')}}</span>

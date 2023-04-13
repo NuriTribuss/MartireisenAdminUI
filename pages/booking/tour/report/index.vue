@@ -17,7 +17,7 @@
       <span slot="id" slot-scope="record">
          <nuxt-link :to="'/booking/tour/report/'+record.id"  >
            <a-button class="mr-1" size="small" type="primary">
-                <i class="fe fe-list text-white"></i>
+                <i class="la la-list text-white"></i>
          </a-button>
         </nuxt-link>
       </span>
@@ -67,7 +67,7 @@
         <div class="drawer-bottom">
           <a-button @click="onClose" class="mr-2">{{$t('btn.cancel')}}</a-button>
           <a-button :loading="loading" @click="passes(onSubmit)" class="w-50" type="primary">
-            <i class="fe fe-save mr-2"></i>
+            <i class="la la-save mr-2"></i>
             {{$t('btn.save')}}
           </a-button>
         </div>
@@ -88,7 +88,7 @@
         <div class="drawer-bottom" style="position: unset">
           <a-button @click="onClose" class="mr-2">{{$t('btn.cancel')}}</a-button>
           <a-button :loading="loading" @click="passes(changePass)" class="w-50" type="primary">
-            <i class="fe fe-save mr-2"></i>
+            <i class="la la-save mr-2"></i>
             {{$t('btn.save')}}
           </a-button>
         </div>

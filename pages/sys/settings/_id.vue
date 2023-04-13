@@ -8,7 +8,7 @@
       </select>
       <nuxt-link to="/sys/settings">
         <a-button type="primary">
-          <i class="fe fe-arrow-left"></i>
+          <i class="la la-arrow-left"></i>
           {{$t('btn.back')}}
         </a-button>
       </nuxt-link>
@@ -56,7 +56,7 @@
               :loading="historyLoading"
               v-on:click="loadHistory(setting.key)"
             >
-              <i class="fe fe-list"></i>
+              <i class="la la-list"></i>
             </a-button>
             <button
               class="btn btn-sm ml-2"
@@ -65,13 +65,13 @@
               v-if="setting.language == 1"
               v-on:click="loadSetting(setting)"
             >
-              <i class="fe fe-globe"></i>
+              <i class="la la-globe"></i>
             </button>
           </div>
         </div>
         <a-form-item class="text-right">
           <a-button type="primary" class="save-btn" @click="save">
-            <i class="fe fe-save mr-2"></i>
+            <i class="la la-save mr-2"></i>
             {{ $t('btn.save')}}
           </a-button>
         </a-form-item>
@@ -137,7 +137,7 @@
         <div class="drawer-bottom">
           <a-button @click="settingFormVisible.show = false" class="mr-2">{{$t('btn.cancel')}}</a-button>
           <a-button :loading="settingFormVisible.loading" @click="passes(updateSetting)" class="w-50" type="primary">
-            <i class="fe fe-save mr-2"></i>
+            <i class="la la-save mr-2"></i>
             {{$t('btn.save')}}
           </a-button>
         </div>

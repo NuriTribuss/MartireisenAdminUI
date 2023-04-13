@@ -16,7 +16,7 @@
     >
       <span slot="id" slot-scope="record">
         <!-- <a-button @click="fetchPromo(record.id)" class="mr-1" size="small" type="primary">
-                <i class="fe fe-edit text-white"></i>
+                <i class="la la-edit text-white"></i>
          </a-button> -->
         <a-popconfirm :title="$t('messages.sure_delete')" @confirm="deleteRecord(record.id)">
               <a-button class="mr-2" size="small" type="danger">
@@ -36,7 +36,7 @@
          {{ record.destination_name == '' ? record.destination_value : record.destination_name}}
       </span>
        <span slot="url" slot-scope="record">
-         <a v-bind:href="'https://martireisen.at/'+ record.value" target="_blank">{{ record.value }} <i class="fe fe-link"></i></a>
+         <a v-bind:href="'https://martireisen.at/'+ record.value" target="_blank">{{ record.value }} <i class="la la-link"></i></a>
       </span>
     </vi-table>
   

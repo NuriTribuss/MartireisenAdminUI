@@ -10,7 +10,7 @@
           to="/booking/tour/report"
         >
           <span>
-            <i class="fe fe-arrow-left"></i>
+            <i class="la la-arrow-left"></i>
             <span class>{{ $t('common.back')}}</span>
           </span>
         </nuxt-link>
@@ -50,11 +50,11 @@
               </div>
               <div class="col-12 col-md-6 col-lg-4">
                 <div>
-                  <i class="fe fe-mail mr-2"></i>
+                  <i class="la la-mail mr-2"></i>
                   {{book.email}}
                 </div>
                 <div>
-                  <i class="fe fe-phone mr-2"></i>
+                  <i class="la la-phone mr-2"></i>
                   {{book.phone}}
                 </div>
               </div>
@@ -66,16 +66,16 @@
                 <div>
                   Ödeme Durumu :
                   <span v-if="book.status.id == 1">
-                    <i class="fe fe-check-circle text-success"></i>
+                    <i class="la la-check-circle text-success"></i>
                   </span>
                    <span v-if="book.status.id == 0">
-                    <i class="fe fe-alert-circle text-danger"></i>
+                    <i class="la la-alert-circle text-danger"></i>
                   </span>
                 </div>
               </div>
               <div class="col-1 text-right d-print-none">
                 <nuxt-link target="_blank" :to="'/booking/orders/'+book.id" class="btn btn-sm btn-primary">
-                  <i class="fe fe-search"></i>
+                  <i class="la la-search"></i>
                 </nuxt-link>
               </div>
             </div>
