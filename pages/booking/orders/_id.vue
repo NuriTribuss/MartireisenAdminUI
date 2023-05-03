@@ -191,13 +191,7 @@
                   </div>
                   <div class="flex-grow-1 index_info_1s5ZY">
                     <div
-                      class="
-                        text-uppercase
-                        font-size-16
-                        text-truncate
-                        d-flex
-                        justify-content-between
-                      "
+                      class="text-uppercase font-size-16 text-truncate d-flex justify-content-between"
                     >
                       {{ person.name }} {{ person.surname }}
                       <a-popconfirm
@@ -265,6 +259,107 @@
                     >
                       <i class="la la-calendar mr-2"></i>
                       {{ person.birthday }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body py-3">
+            <div class="mb-3 font-weight-bold">
+              {{ $t("pages.booking.comment") }}
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <a-form-item :wrapper-col="{ span: 24 }">
+                  <textarea
+                    :rows="3"
+                    :placeholder="$t('pages.booking.comment.placeholder')"
+                    v-model="note"
+                    class="ant-input"
+                  ></textarea>
+                </a-form-item>
+              </div>
+              <div class="col-12 text-right">
+                <button @click="addNote" class="btn btn-primary">submit</button>
+              </div>
+            </div>
+            <div class="row">
+              <a-drawer
+                :closable="true"
+                @close="
+                  () => {
+                    note_edit_visible = false;
+                  }
+                "
+                :title="$t('pages.engine_airport.detail')"
+                :visible="note_edit_visible"
+                placement="right"
+                width="500"
+              >
+                <div class="row">
+                  <div class="col-12" v-if="editable_note">
+                    <a-form-item :wrapper-col="{ span: 24 }">
+                      <textarea
+                        :rows="3"
+                        :placeholder="$t('pages.booking.comment.placeholder')"
+                        v-model="editable_note.comment"
+                        class="ant-input"
+                      ></textarea>
+                    </a-form-item>
+                  </div>
+                  <div class="col-12 text-right">
+                    <button @click="updateNote" class="btn btn-primary">
+                      submit
+                    </button>
+                  </div>
+                </div>
+              </a-drawer>
+              <div
+                class="col-12 mt-2"
+                v-for="(item, index) in data.notes"
+                v-bind:key="index"
+              >
+                <hr />
+                <div class="d-flex flex-nowrap align-items-center mb-3">
+                  <div class="air__utils__avatar--size46 mr-3 flex-shrink-0">
+                    <a-avatar
+                      class="mt-1"
+                      style="color: #f56a00; backgroundcolor: #fde3cf"
+                      :size="42"
+                      >{{ item.user_id }}</a-avatar
+                    >
+                  </div>
+                  <div class="flex-grow-1 justify-content-between d-flex index_info_1s5ZY">
+                    <div>
+                      <div
+                        class="text-uppercase font-size-16 text-truncate w-100"
+                      >
+                        {{ (item.user)?item.user.firstname + " " + item.user.lastname:$t('custommer') }}
+                      </div>
+
+                      <p>
+                        {{ item.comment }}
+                      </p>
+                      
+                    
+                  
+                  <div class="text-dark font-size-12 text-gray-6 text-truncate">
+                    <i class="la la-calendar mr-2"></i>
+                    {{ item.created_at }}
+                  </div>
+                    </div>
+                    <div v-if="$auth.user.id===item.user_id">
+                      <a-popconfirm :title="$t('messages.sure_delete')">
+                        <a-button type="danger" @click="destroyNote(item.id)">
+                          <a-icon type="delete" />
+                        </a-button>
+                      </a-popconfirm>
+                      <a-button @click="editNote(item)" type="edit">
+                        <a-icon type="edit" />
+                      </a-button>
                     </div>
                   </div>
                 </div>
@@ -433,6 +528,9 @@ export default {
         surname: "",
         is_children: 0,
       },
+      note: "",
+      note_edit_visible: false,
+      editable_note: null,
     };
   },
   mounted() {
@@ -545,6 +643,53 @@ export default {
         description: response.data.message,
         placement: "bottomRight ",
       });
+    },
+    addNote() {
+      this.$axios
+        .post("/booking/booking/addnote/" + this.$route.params.id, {
+          comment: this.note,
+        })
+        .then((response) => {
+          this.note=""
+          this.fetch();
+          this.log();
+        })
+        .catch((error) => {
+          //this.onFailure(error.response);
+        });
+    },
+    editNote(note) {
+      this.editable_note = note;
+      this.note_edit_visible = true;
+
+      console.log(this.editable_note);
+    },
+    updateNote() {
+      if (!this.editable_note) return;
+      this.$axios
+        .post("/booking/booking/updatenote/" + this.editable_note.id, {
+          comment: this.editable_note.comment,
+        })
+        .then((response) => {
+          this.editable_note = null;
+          this.note_edit_visible = false;
+          this.fetch();
+          this.log();
+        })
+        .catch((error) => {
+          //this.onFailure(error.response);
+        });
+    },
+    destroyNote(id) {
+      this.$axios
+        .delete("/booking/booking/destroynote/" + id)
+        .then((response) => {
+          this.fetch();
+          this.log();
+        })
+        .catch((error) => {
+          //this.onFailure(error.response);
+        });
     },
   },
 };
