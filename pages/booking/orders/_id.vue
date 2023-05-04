@@ -352,8 +352,8 @@
                   </div>
                     </div>
                     <div v-if="$auth.user.id===item.user_id">
-                      <a-popconfirm :title="$t('messages.sure_delete')">
-                        <a-button type="danger" @click="destroyNote(item.id)">
+                      <a-popconfirm :title="$t('messages.sure_delete')" @confirm="destroyNote(item.id)">
+                        <a-button type="danger">
                           <a-icon type="delete" />
                         </a-button>
                       </a-popconfirm>
