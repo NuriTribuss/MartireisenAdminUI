@@ -102,14 +102,17 @@
           },
           {
             title: this.$t("pages.booking.cols.amount"),
-            dataIndex: "amount"
+            dataIndex: "amount",
+            customRender: function(text, record, index) {
+              return parseFloat(record.amount).toFixed(2) + ' ' + record.currency;
+            }
           },
           {
             title: this.$t("pages.booking.cols.status"),
             dataIndex: "status",
             scopedSlots: {customRender: "status"}
           },
-        {
+          {
             title: this.$t("pages.booking.payment_method"),
             dataIndex: "payment",
             scopedSlots: {customRender: "payment"}
