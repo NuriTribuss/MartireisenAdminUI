@@ -276,7 +276,7 @@
                 <a-form-item :wrapper-col="{ span: 24 }">
                   <textarea
                     :rows="3"
-                    :placeholder="$t('pages.booking.comment.placeholder')"
+                    :placeholder="$t('pages.booking.comment_placeholder')"
                     v-model="note"
                     class="ant-input"
                   ></textarea>

@@ -132,6 +132,8 @@
       "title": "Rezervasyonlar",
       "active": "Aktif",
       "passive": "Pasif",
+      "comment": "Notlar",
+      "comment_placeholder": "Not yaz",
       "cols": {
         "pnr": "Kod",
         "active": "Aktif/Pasif",
