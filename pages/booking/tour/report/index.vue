@@ -22,10 +22,10 @@
         </nuxt-link>
       </span>
        <span slot="usage" slot-scope="record">
-         <span class="badge badge-info rounded-0 w-100 font-size-14">{{record.max_count - record.available_count}}</span>
+         <span class="badge badge-info rounded-0 w-100 font-size-14">{{record.reserveInfo?.successReservesCount}}</span>
       </span>
         <span slot="available_count" slot-scope="record">
-         <span class="badge badge-success rounded-0 w-100 font-size-14">{{record.value}}</span>
+         <span class="badge badge-success rounded-0 w-100 font-size-14">{{record.max_count - record.reserveInfo?.successReservesCount}}</span>
       </span>
        <span slot="start" slot-scope="record">
          {{ $moment.unix(record.start_date).format("DD/MM/YYYY")}} {{record.start_hour}}
@@ -139,7 +139,6 @@
           },
           {
             title: this.$t("pages.tour_period.cols.available"),
-            dataIndex: "available_count",
             scopedSlots: {customRender: "available_count"},
             width : 150,
 
