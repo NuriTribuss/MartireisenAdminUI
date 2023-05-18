@@ -3,7 +3,7 @@
     <a-form layout="inline">
       <a-form-item>
         <a-input
-          @change="$emit('searchBooking',searchData)"
+          @change="emitSearchData"
           allowClear
           :placeholder="$t('pages.booking.filter.code')"
           v-model="searchData.code"
@@ -11,7 +11,7 @@
       </a-form-item>
        <a-form-item>
         <a-input
-          @change="$emit('searchBooking',searchData)"
+          @change="emitSearchData"
           allowClear
           :placeholder="$t('pages.booking.filter.email')"
           v-model="searchData.email"
@@ -19,7 +19,7 @@
       </a-form-item>
        <a-form-item>
         <a-input
-          @change="$emit('searchBooking',searchData)"
+          @change="emitSearchData"
           allowClear
           :placeholder="$t('pages.booking.filter.name')"
           v-model="searchData.name"
@@ -44,12 +44,12 @@
       </a-form-item>
        <a-form-item>
         <a-select
-          @change="$emit('searchBooking',searchData)"
+          @change="emitSearchData"
           :placeholder="$t('pages.booking.filter.source')"
           allowClear
           v-model="searchData.source"
         >
-          <a-select-option value="">Tüm Apiler</a-select-option>
+          <a-select-option :value=null>Tüm Apiler</a-select-option>
           <a-select-option value="TravelIT">Paket Tatil / Tatil </a-select-option>
           <a-select-option value="Tour">Tur</a-select-option>
           <a-select-option value="HalalBooking">Halla Booking</a-select-option>
@@ -78,13 +78,38 @@ export default {
     onCreatedmin(value, dateString) {
       let date = dateString;
       this.searchData.created_min = date;
+      if(this.searchData.name != null && this.searchData.name.trim() == ''){
+        this.searchData.name = null;
+      }
       this.$emit("searchBooking", this.searchData);
     },
     onCreatedmax(value, dateString) {
       let date = dateString;
       this.searchData.created_max = date;
+      if(this.searchData.created_max != null && this.searchData.created_max.trim() == ''){
+        this.searchData.created_max = null;
+      }
       this.$emit("searchBooking", this.searchData);
-    }
+    },
+    emitSearchData(){
+      if(this.searchData.code != null && this.searchData.code.trim() == ''){
+        this.searchData.code = null;
+      }
+      if(this.searchData.source != null && this.searchData.source.trim() == ''){
+        this.searchData.source = null;
+      }
+      if(this.searchData.email != null && this.searchData.email.trim() == ''){
+        this.searchData.email = null;
+      }
+      if(this.searchData.name != null && this.searchData.name.trim() == ''){
+        this.searchData.name = null;
+      }
+      if(this.searchData.created_min != null && this.searchData.created_min.trim() == ''){
+        this.searchData.created_min = null;
+      }
+      
+      this.$emit('searchBooking',this.searchData)
+    },
   }
 };
 </script>

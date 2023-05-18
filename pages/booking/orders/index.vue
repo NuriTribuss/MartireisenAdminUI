@@ -162,7 +162,7 @@
       },
       handleTableChange(pagination, filters, sorter,filtered,data) {
         if (filtered){
-          this.$store.dispatch("booking/order/getFilteredData", {searchData:data, page: pagination});
+          this.$store.dispatch("booking/order/getFilteredData", {searchData: data, page: pagination});
         }else {
           this.$store.dispatch("booking/order/get", {page: pagination});
         }
