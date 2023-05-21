@@ -47,19 +47,28 @@
                     </a-select>
                   </a-form-item>
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col-4">
                       <a-form-item
-                        :label-col="{ span:8 }"
-                        :wrapper-col="{ span: 16 }"
+                        :label-col="{ span:12 }"
+                        :wrapper-col="{ span: 12 }"
                         label="Başlangıç Tarihi"
                       >
                         <a-date-picker format="YYYY-MM-DD" valueFormat="YYYY-MM-DD" class="w-100" v-model="form.date_start" />
                       </a-form-item>
                     </div>
-                    <div class="col-6">
+                    <div class="col-4">
                       <a-form-item
-                        :label-col="{ span:8 }"
-                        :wrapper-col="{ span: 16 }"
+                        :label-col="{ span:12 }"
+                        :wrapper-col="{ span: 12 }"
+                        label="süre"
+                      >
+                      <a-input-number class="w-100" v-model="form.duration" :min="1" :max="365" />
+                      </a-form-item>
+                    </div>
+                    <div class="col-4">
+                      <a-form-item
+                        :label-col="{ span:12 }"
+                        :wrapper-col="{ span: 12 }"
                         label="Bitiş Tarihi"
                       >
                         <a-date-picker format="YYYY-MM-DD" valueFormat="YYYY-MM-DD" class="w-100" v-model="form.date_end" />
@@ -212,12 +221,24 @@ export default {
         destination_value: "",
         destination_name: "", 
         operators : [],
+        duration: 0,
       },
       countries: [],
       airports: [],
       operators: [],
       results : []
     };
+  },
+  watch: {
+    'form.duration'(){
+      this.calcDates();
+    },
+    'form.date_start'(){
+      this.calcDuration();
+    },
+    'form.date_end'(){
+      this.calcDuration();
+    }
   },
   mounted() {
     this.$store.dispatch("localization/languages/get", { page: 1 });
@@ -248,7 +269,6 @@ export default {
     },
   },
   methods: {
-
     search(){
         let data = new FormData;
         data.append("q",this.search_value);
@@ -265,7 +285,21 @@ export default {
       }
       return "";
     },
-
+    calcDates()
+    {
+      let newVal = this.$moment(this.form.date_start).add(this.form.duration, "days").format('YYYY-MM-DD');
+      console.log(newVal);
+      if(newVal != this.form.date_end){
+        this.form.date_end=newVal;
+      }
+    },
+    calcDuration(){
+      let newVal = this.form.duration = this.$moment(this.form.date_end).diff(this.form.date_start,"days")
+      console.log(newVal);
+      if(newVal != this.form.duration && newVal > 0){
+        this.form.duration=newVal;
+      }
+    },
     onSubmit() {
    
         this.$axios
