@@ -288,14 +288,12 @@ export default {
     calcDates()
     {
       let newVal = this.$moment(this.form.date_start).add(this.form.duration, "days").format('YYYY-MM-DD');
-      console.log(newVal);
       if(newVal != this.form.date_end){
         this.form.date_end=newVal;
       }
     },
     calcDuration(){
       let newVal = this.form.duration = this.$moment(this.form.date_end).diff(this.form.date_start,"days")
-      console.log(newVal);
       if(newVal != this.form.duration && newVal > 0){
         this.form.duration=newVal;
       }
