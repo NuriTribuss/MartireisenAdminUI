@@ -19,7 +19,7 @@
       </a-form-item>
       <a-form-item>
         <a-select
-          @change="$emit('searchLandingZone',searchData)"
+          @change="$emit('searchLandingOtel',searchData)"
           placeholder="Dil"
           allowClear
           v-model="searchData.language"

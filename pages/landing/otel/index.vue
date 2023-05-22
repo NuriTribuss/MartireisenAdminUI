@@ -92,8 +92,6 @@ export default {
           scopedSlots: { customRender: "language" }
 
         },
-
-      
         {
           title: this.$t("pages.landing_otel.cols.created_at"),
           dataIndex: "created_at",
