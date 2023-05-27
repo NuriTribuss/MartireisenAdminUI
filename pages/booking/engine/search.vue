@@ -181,7 +181,6 @@ export default {
         }
         this.form     = el._source;
         this.form._id = el._id;
-        console.log(this.form);
     },
     onSubmit() {
       this.loading = true;

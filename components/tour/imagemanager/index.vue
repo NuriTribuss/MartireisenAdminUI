@@ -156,7 +156,6 @@ export default {
         main: value.main
       };
       this.imageModal = true;
-      console.log("test");
     },
     submitImageData() {
       this.$axios

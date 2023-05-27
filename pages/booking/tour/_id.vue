@@ -11,7 +11,19 @@
         </nuxt-link>
       </div>
     </div>
-
+    <a-row :gutter="30">
+      <ValidationProvider name="title" rules="required" v-slot="slotProps">
+          <a-form-item
+            :help="slotProps.errors[0]"
+            label="başlık"
+            :label-col="{ span: 2 }"
+            :validateStatus="resolveState(slotProps)"
+            :wrapper-col="{ span: 15 }"
+          >
+            <input class="ant-input" v-model="form.title" />
+          </a-form-item>
+        </ValidationProvider>
+    </a-row>
     <a-row :gutter="30">
       <a-col :span="24">
         <a-tabs class="iconic-tab" defaultActiveKey="1" @change="tabChange">
@@ -289,6 +301,7 @@ export default {
       visiblevar: false,
       loading: false,
       form: {
+        title: "",
         meta: {},
         active: 1,
         sort_number: 99,
@@ -361,7 +374,7 @@ export default {
         .get("/booking/tour/tour/" + this.$route.params.id)
         .then(response => {
           this.data = response.data.data;
-
+          this.form.title = this.data.title;
           this.form.sort_number = this.data.sort_number;
           this.form.active = this.data.active;
           this.form.destination = this.data.destination;

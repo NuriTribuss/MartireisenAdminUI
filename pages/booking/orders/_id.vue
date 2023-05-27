@@ -618,6 +618,7 @@ export default {
         this.$axios
           .post("/booking/booking/approve/" + this.$route.params.id)
           .then((response) => {
+            console.log(response);
             this.onResponse(response);
           })
           .catch((error) => {

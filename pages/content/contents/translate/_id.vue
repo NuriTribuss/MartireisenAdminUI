@@ -133,7 +133,6 @@ export default {
   },
   methods: {
     categoriesOnChange(value) {
-      console.log(value);
       this.value = value;
     },
     categoriesOnSearch() {

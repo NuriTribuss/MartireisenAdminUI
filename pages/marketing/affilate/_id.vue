@@ -46,7 +46,42 @@
                       <a-select-option v-for="(d) in destination_types" :key="d.code">{{d.name}}</a-select-option>
                     </a-select>
                   </a-form-item>
-                  <div class="row">
+
+
+
+
+
+                  <div class="row" v-if="form.travel_api == 'Tour'">
+                    <div class="col-8">
+                      <a-form-item
+                        :label-col="{ span:6 }"
+                        :wrapper-col="{ span: 18 }"
+                        label="Tour Title"
+                      >
+                        <a-select class="col-12 p-0" v-model="form.destination_value" v-on:change="loadTourDates" style="width: 100%; ">
+                          <a-select-option v-for="(d) in tours.tours" :key="d.id">{{d.title}}</a-select-option>
+                        </a-select>
+                      </a-form-item>
+                    </div>
+                    <div class="col-4">
+                      <a-form-item
+                        :label-col="{ span:6 }"
+                        :wrapper-col="{ span: 18 }"
+                        label="date"
+                      >
+                        <a-select class="col-12 p-0" v-model="form.date_start" style="width: 100%; ">
+                          <a-select-option v-for="(d) in periods" :key="$moment(d.start_date_pretty,'DD.MM.YYYY').format('YYYY-MM-DD')">{{$moment(d.start_date_pretty,"DD.MM.YYYY").format('YYYY-MM-DD')}}</a-select-option>
+                        </a-select>
+                      </a-form-item>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="row" v-if="form.travel_api != 'Tour'">
                     <div class="col-4">
                       <a-form-item
                         :label-col="{ span:12 }"
@@ -75,7 +110,7 @@
                       </a-form-item>
                     </div>
                   </div>
-                  <div class="row">
+                  <div class="row" v-if="form.travel_api != 'Tour'">
                     <div class="col-6">
                       <a-form-item
                         :label-col="{ span:8 }"
@@ -223,10 +258,21 @@ export default {
         operators : [],
         duration: 0,
       },
+      tourSearchData : {
+        source: null,
+        destination: null,
+        date: null,
+        sourceList: null,
+        destinationList: null,
+        dateList: null,
+        showAll: false
+      },
       countries: [],
       airports: [],
       operators: [],
-      results : []
+      results : [],
+      tours: [],
+      periods: [],
     };
   },
   watch: {
@@ -252,6 +298,14 @@ export default {
     this.$axios.get("/region/country?limit=500").then((response) => {
       this.countries = response.data.data;
     });
+    // this.$axios.get("/booking/tour/tour/").then((response) => {
+    //   this.tours = response.data.data;
+    // });
+    this.tourSearchData.showAll = true;
+    this.$axios.post('/booking/tour/tour/search?active=1&ssr=1',this.tourSearchData)
+      .then((response) => {
+          this.tours = response.data.data;
+    })
   },
   computed: {
     e() {
@@ -299,7 +353,13 @@ export default {
       }
     },
     onSubmit() {
-   
+      if(this.form.travel_api=="Tour"){
+        this.form.date_end = "";
+        this.form.departure_code = "";
+        this.form.destination_name = "";
+        this.form.destination_type = "Tour";
+        this.form.duration = 0;
+      }
         this.$axios
           .post("/marketing/affilate", this.form)
           .then((response) => {
@@ -335,6 +395,14 @@ export default {
         placement: "bottomRight ",
       });
     },
+    loadTourDates(){
+      let vue = this;
+      vue.periods = [];
+      var tour = vue.tours.tours.filter(obj => obj.id == vue.form.destination_value);
+      if(tour != null){
+        vue.periods = tour[0].periods;
+      }
+    }
 
     
   },
