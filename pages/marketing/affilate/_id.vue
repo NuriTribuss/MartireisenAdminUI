@@ -95,7 +95,7 @@
                       <a-form-item
                         :label-col="{ span:12 }"
                         :wrapper-col="{ span: 12 }"
-                        label="süre"
+                        label="Süre"
                       >
                       <a-input-number class="w-100" v-model="form.duration" :min="1" :max="365" />
                       </a-form-item>
