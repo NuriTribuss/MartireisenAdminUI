@@ -442,8 +442,9 @@
             <a-list item-layout="horizontal" :data-source="logs">
               <a-list-item slot="renderItem" slot-scope="item, index">
                 <a-list-item-meta>
+                                   
                   <div slot="description">
-                    <b>Ip : </b>{{ item.ip }}
+                    <b>{{ item.author }}</b> - <b>Ip : </b>{{ item.ip }}
                     <span class="float-right">{{ item.created_at }}</span>
                   </div>
                   <a slot="title">{{ item.message }}</a>
