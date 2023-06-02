@@ -7,7 +7,7 @@ export const getMenuData = [
     {
       title: 'Gösterge Paneli',
       key: 'dashboards',
-      icon: 'la la-activity',
+      icon: 'lab la-buromobelexperte',
       url: '/',
     },
     {
@@ -319,7 +319,7 @@ export const getMenuData = [
     {
       title: 'Ayarlar',
       key: 'settings',
-      icon: 'la la-settings',
+      icon: 'las la-cog',
       url: '/sys/settings',
       children: [
         {
