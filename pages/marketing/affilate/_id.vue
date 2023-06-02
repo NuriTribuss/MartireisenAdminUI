@@ -28,7 +28,7 @@
                       <a-select-option v-for="(d) in api" :key="d">{{d}}</a-select-option>
                     </a-select>
                   </a-form-item>
-                  <a-form-item
+                  <a-form-item v-if="form.travel_api != 'Tour'"
                     :label-col="{ span:4 }"
                     :wrapper-col="{ span: 20 }"
                     label="Tatil Tipi"
@@ -37,7 +37,7 @@
                       <a-select-option v-for="(d) in types" :key="d.code">{{d.name}}</a-select-option>
                     </a-select>
                   </a-form-item>
-                  <a-form-item
+                  <a-form-item v-if="form.travel_api != 'Tour'"
                     :label-col="{ span:4 }"
                     :wrapper-col="{ span: 20 }"
                     label="Bölge / Otel Seçimi"
@@ -397,6 +397,7 @@ export default {
     },
     loadTourDates(){
       let vue = this;
+      vue.form.date_start = null;
       vue.periods = [];
       var tour = vue.tours.tours.filter(obj => obj.id == vue.form.destination_value);
       if(tour != null){

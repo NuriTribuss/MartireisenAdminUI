@@ -136,10 +136,15 @@ export default {
       this.selectedRowKeys = selectedRowKeys;
     },
     handleTableChange(pagination, filters, sorter,filtered,filteredData) {
-      this.$store.dispatch("landing/zone/getFilteredData", {
-        searchData:filteredData,
-        page: pagination
-      });
+      if (filtered) {
+        this.$store.dispatch("landing/zone/getFilteredData", {
+          searchData:filteredData,
+          page: pagination
+        });
+      } else {
+        this.$store.dispatch("landing/base/get", {page: pagination});
+      }
+      
     },
     handleClickAction(name) {
       switch (name) {
