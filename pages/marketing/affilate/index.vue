@@ -3,6 +3,12 @@
     <div class="air__utils__heading">
       <h5>{{ $t('pages.affilate.title')}}</h5>
     </div>
+    <div class="w-100 text-right">
+      <Excel url="marketing/affilate/excel" class="mb-2" type="primary">
+            <i class="la la-file-excel"></i>
+            {{ $t('export')}}
+      </Excel>
+    </div>
     <vi-table
       :actions="actions"
       :columns="columns"
@@ -46,10 +52,12 @@
 
 <script>
   import ViTable from "~/components/vi-table";
+  import Excel from "~/components/widgets/excel";
 
   export default {
     components: {
       "vi-table": ViTable,
+      Excel
     },
     data() {
       return {
