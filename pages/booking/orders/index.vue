@@ -17,6 +17,7 @@
       @onAction="handleClickAction"
       rowKey="id"
       showBookingFilter
+      @filteredData="handleFilter"
     >
       <span slot="language" slot-scope="record">
         <i class="flag-icon" v-bind:class="'flag-icon-'+record.value"></i>
@@ -180,6 +181,9 @@
             break;
         }
       },
+      handleFilter(data){
+        console.log(data);
+      }
     }
   };
 </script>

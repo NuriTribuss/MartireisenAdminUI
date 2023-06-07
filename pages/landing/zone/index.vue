@@ -18,6 +18,7 @@
       @onAction="handleClickAction"
       @change="handleTableChange"
       showLandingZoneFilter
+      @filteredData="handleFilter"
     >
      <span slot="language" slot-scope="record">
         <i class="flag-icon" v-bind:class="'flag-icon-'+record.value"></i>
@@ -168,6 +169,9 @@ export default {
         id: [id],
       })
     },
+    handleFilter(data){
+      console.log(data);
+    }
 
   }
 };

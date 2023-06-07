@@ -200,7 +200,8 @@
           page: 1
         });
         this.filtered = true;
-        this.filteredData = data
+        this.filteredData = data,
+        this.$emit("filteredData", data);
       },
    
       filterLog(data) {
@@ -209,16 +210,17 @@
           page: 1
         });
         this.filtered = true;
-        this.filteredData = data
+        this.filteredData = data,
+        this.$emit("filteredData", data);
       },
       filterMember(data) {
-        console.log(data)
         this.$store.dispatch("member/member/getFilteredData", {
           searchData: data,
           page: 1
         });
         this.filtered = true;
-        this.filteredData = data
+        this.filteredData = data,
+        this.$emit("filteredData", data);
       },
      
       filterBooking(data) {
@@ -227,7 +229,8 @@
           page: 1
         });
         this.filtered = true;
-        this.filteredData = data
+        this.filteredData = data;
+        this.$emit("filteredData", data);
       },
       filterLandingOtel(data) {
         this.$store.dispatch("landing/otel/getFilteredData", {
@@ -235,7 +238,8 @@
           page: 1
         });
         this.filtered = true;
-        this.filteredData = data
+        this.filteredData = data,
+        this.$emit("filteredData", data);
       },
       filterLandingZone(data) {
         this.$store.dispatch("landing/zone/getFilteredData", {
@@ -243,7 +247,8 @@
           page: 1
         });
         this.filtered = true;
-        this.filteredData = data
+        this.filteredData = data,
+        this.$emit("filteredData", data);
       },
       filterLandingBase(data) {
         this.$store.dispatch("landing/base/getFilteredData", {
@@ -251,7 +256,8 @@
           page: 1
         });
         this.filtered = true;
-        this.filteredData = data
+        this.filteredData = data,
+        this.$emit("filteredData", data);
       }
      
     }

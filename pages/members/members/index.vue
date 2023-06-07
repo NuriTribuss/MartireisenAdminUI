@@ -4,6 +4,12 @@
       <h5 class="float-left">{{ $t('pages.members.title')}}</h5>
       <div class="clearfix"></div>
     </div>
+    <div class="w-100 text-right">
+      <Excel url="crm/customer/excel" :filters="filters" class="mb-2" type="primary">
+            <i class="la la-file-excel"></i>
+            {{ $t('export')}}
+      </Excel>
+    </div>
     <vi-table
       :actions="actions"
       :columns="columns"
@@ -17,6 +23,7 @@
       @onAction="handleClickAction"
       rowKey="id"
       showMemberFilter
+      @filteredData="handleFilter"
     >
       <span slot="language" slot-scope="record">
         <i class="flag-icon" v-bind:class="'flag-icon-'+record.value"></i>
@@ -55,14 +62,17 @@
 
 <script>
 import ViTable from "@/components/vi-table";
+import Excel from "~/components/widgets/excel";
 
 export default {
   components: {
-    "vi-table": ViTable
+    "vi-table": ViTable,
+    Excel
   },
   data() {
     return {
       selectedRowKeys: [],
+      filters: null,
       actions: [
         {
           name: "refresh",
@@ -144,18 +154,21 @@ export default {
     },
     handleTableChange(pagination, filters, sorter, filtered, data) {
       if (filtered) {
+        this.filters = data;
         this.$store.dispatch("member/member/getFilteredData", {
           searchData: data,
           page: pagination
         });
       } else {
         this.$store.dispatch("member/member/get", { page: pagination });
+        this.filters = null;
       }
     },
     handleClickAction(name) {
       switch (name) {
         case "refresh":
           this.$store.dispatch("member/member/refresh");
+          this.filters = null;
           break;
 
         case "delete":
@@ -172,6 +185,9 @@ export default {
       this.$store.dispatch("member/member/delete", {
         id: [id]
       });
+    },
+    handleFilter(data){
+      this.filters = data;
     }
   }
 };

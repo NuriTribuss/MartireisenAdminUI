@@ -109,7 +109,6 @@ export default {
         .then(response => {
           this.data = response.data.data;
           this.parent = response.data.parent;
-          console.log(this.parent)
         });
     },
 

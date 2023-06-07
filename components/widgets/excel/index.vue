@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  props: ["url","type"],
+  props: ["url","type","filters"],
   data(){
     return {
         loading:false
@@ -15,7 +15,23 @@ export default {
   methods: {
     download() {
       this.loading = true;
-      var res = this.$axios.get(this.url).then((res) => {
+      // this.$axios.post(this.url,this.filters).then((response) => {
+      //   console.log(this.filters);
+      //   const data = response.data;
+      //   const link = document.createElement("a");
+      //   link.href =
+      //     "data:application/vnd.ms-excel;charset=utf-8," +
+      //     encodeURIComponent(data);
+      //   link.setAttribute(
+      //     "download",
+      //     "exxport-" + Math.random(1000000, 999999999) + ".xls"
+      //   );
+      //   document.body.appendChild(link);
+      //   link.click();
+      //   link.remove();
+      //   this.loading = false;
+      // })
+      var res = this.$axios.get(this.url, { params : this.filters}).then((res) => {
         const data = res.data;
         //console.log("data:application/vnd.ms-excel;charset=utf-8,"+ encodeURIComponent(data));
         const link = document.createElement("a");

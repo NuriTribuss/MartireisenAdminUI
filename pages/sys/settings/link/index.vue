@@ -20,6 +20,7 @@
       @onAction="handleClickAction"
       rowKey="id"
       showLinkFilter
+      @filteredData="handleFilter"
     >
       <span slot="active" slot-scope="record">
         <a-badge
@@ -404,6 +405,9 @@ export default {
       });
       this.loading = false;
     },
+    handleFilter(data){
+      console.log(data);
+    }
   },
 };
 </script>
