@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  props: ["url","type","filters"],
+  props: ["url","type","filters","filename"],
   data(){
     return {
         loading:false
@@ -20,7 +20,7 @@ export default {
         var fileURL = window.URL.createObjectURL(new Blob([data]));
         var fileLink = document.createElement('a');
         fileLink.href = fileURL;
-        fileLink.setAttribute('download', "exxport-" + Math.random(1000000, 999999999) + ".xlsx");
+        fileLink.setAttribute('download', "exxport-" + this.filename + "-" + this.$moment().format('YYYY-MM-DD-h.mm.ss') + ".xlsx");
         document.body.appendChild(fileLink);
         fileLink.click();
         this.loading = false;

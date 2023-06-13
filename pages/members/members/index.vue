@@ -5,7 +5,7 @@
       <div class="clearfix"></div>
     </div>
     <div class="w-100 text-right">
-      <Excel url="crm/customer/excel" :filters="filters" class="mb-2" type="primary">
+      <Excel url="crm/customer/excel" :filters="filters" filename="members" class="mb-2" type="primary">
             <i class="la la-file-excel"></i>
             {{ $t('export')}}
       </Excel>

@@ -4,6 +4,12 @@
       <h5 class="float-left">Newsletter</h5>
       <div class="clearfix"></div>
     </div>
+    <div class="w-100 text-right">
+      <Excel url="crm/subscriber/excel" :filters="filters" filename="subscribers" class="mb-2" type="primary">
+            <i class="la la-file-excel"></i>
+            {{ $t('export')}}
+      </Excel>
+    </div>
     <vi-table
       :actions="actions"
       :columns="columns"
@@ -49,14 +55,17 @@
 
 <script>
 import ViTable from "@/components/vi-table";
+import Excel from "~/components/widgets/excel";
 
 export default {
   components: {
-    "vi-table": ViTable
+    "vi-table": ViTable,
+    Excel
   },
   data() {
     return {
       selectedRowKeys: [],
+      filters: null,
       actions: [
         {
           name: "refresh",
