@@ -38,7 +38,6 @@ const actions = {
         username: searchData.email,
         "created_at[min]": searchData.created_min,
         "created_at[max]": searchData.created_max,
-      
       }
     });
     const {data, meta} = res.data;

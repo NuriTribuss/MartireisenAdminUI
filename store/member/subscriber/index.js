@@ -34,8 +34,10 @@ const actions = {
       params: {
         page: page.current,
         limit: page.pageSize,
-        "created_at[min]": searchData.createdmin,
-        "created_at[max]": searchData.createdmax,
+        email: searchData.email,
+        language: searchData.language,
+        "created_at[min]": searchData.created_min,
+        "created_at[max]": searchData.created_max,
       }
     });
     const {data, meta} = res.data;

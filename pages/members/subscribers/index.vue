@@ -22,7 +22,8 @@
       @change="handleTableChange"
       @onAction="handleClickAction"
       rowKey="id"
-      showOrderFilter
+      showSubscriberFilter
+      @filteredData="handleFilter"
     >
       <span slot="language" slot-scope="record">
         <i class="flag-icon" v-bind:class="'flag-icon-'+record.value"></i>
@@ -140,13 +141,18 @@ export default {
       this.selectedRowKeys = selectedRowKeys;
     },
     handleTableChange(pagination, filters, sorter, filtered, data) {
+      console.log(data);
+      console.log(filtered);
+      console.log(pagination);
       if (filtered) {
+        this.filters = data;
         this.$store.dispatch("member/subscriber/getFilteredData", {
           searchData: data,
           page: pagination
         });
       } else {
         this.$store.dispatch("member/subscriber/get", { page: pagination });
+        this.filters = null;
       }
     },
     handleClickAction(name) {
@@ -169,6 +175,9 @@ export default {
       this.$store.dispatch("member/subscriber/delete", {
         id: [id]
       });
+    },
+    handleFilter(data){
+      this.filters = data;
     }
   }
 };
