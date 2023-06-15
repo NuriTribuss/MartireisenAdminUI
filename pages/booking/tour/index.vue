@@ -13,6 +13,8 @@
       @change="handleTableChange"
       @onAction="handleClickAction"
       rowKey="id"
+      showTourFilter
+      @filteredData="handleFilter"
     >
     
       <span slot="id" slot-scope="record">
@@ -108,10 +110,12 @@
     methods: {
       handleTableChange(pagination, filters, sorter, filtered, data) {
         if (filtered) {
+          this.filters = data;
           this.$store.dispatch("booking/tour/getFilteredData", {searchData: data, page: pagination});
 
         } else {
           this.$store.dispatch("booking/tour/get", {page: pagination});
+          this.filters = null;
         }
       },
       handleClickAction(name) {

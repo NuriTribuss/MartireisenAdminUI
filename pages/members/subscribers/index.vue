@@ -141,9 +141,6 @@ export default {
       this.selectedRowKeys = selectedRowKeys;
     },
     handleTableChange(pagination, filters, sorter, filtered, data) {
-      console.log(data);
-      console.log(filtered);
-      console.log(pagination);
       if (filtered) {
         this.filters = data;
         this.$store.dispatch("member/subscriber/getFilteredData", {

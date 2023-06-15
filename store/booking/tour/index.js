@@ -50,8 +50,11 @@ const actions = {
       params: {
         page: page.current,
         limit: page.pageSize,
-        "created_at[min]": searchData.createdmin,
-        "created_at[max]": searchData.createdmax,
+        name: searchData.name,
+        departure_place: searchData.departure_place,
+        destination: searchData.destination,
+        // "created_at[min]": searchData.createdmin,
+        // "created_at[max]": searchData.createdmax,
       }
     });
     const {data, meta} = res.data;

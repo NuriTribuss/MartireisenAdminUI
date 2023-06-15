@@ -43,6 +43,7 @@
       <booking-filter @searchBooking="filterBooking" v-if="showBookingFilter"></booking-filter>
       <member-filter @searchMember="filterMember" v-if="showMemberFilter"></member-filter>
       <subscriber-filter @searchSubscriber="filterSubscriber" v-if="showSubscriberFilter"></subscriber-filter>
+      <tour-filter @searchTour="filterTour" v-if="showTourFilter"></tour-filter>
       <link-filter @searchLink="filterLink" v-if="showLinkFilter"></link-filter>
 
       <landing-otel-filter @searchLandingOtel="filterLandingOtel" v-if="showLandingOtelFilter"></landing-otel-filter>
@@ -70,6 +71,7 @@
   import bookingFilter from "@/components/filter/booking";
   import memberFilter from "@/components/filter/member";
   import subscriberFilter from "@/components/filter/subscriber";
+  import tourFilter from "@/components/filter/tour";
   import landingOtelFilter from "@/components/filter/landingo";
   import landingZoneFilter from "@/components/filter/landingz";
   import landingBaseFilter from "@/components/filter/landingb";
@@ -92,6 +94,10 @@
         default: false
       },
       showSubscriberFilter: {
+        type: Boolean,
+        default: false
+      },
+      showTourFilter: {
         type: Boolean,
         default: false
       },
@@ -120,6 +126,7 @@
       bookingFilter,
       memberFilter,
       subscriberFilter,
+      tourFilter,
       landingOtelFilter,
       landingZoneFilter,
       landingBaseFilter,
@@ -181,6 +188,10 @@
         if(name=="subscriberFilter"){
           this.showSubscriberFilter = !this.showSubscriberFilter;
         }
+
+        if(name=="tourFilter"){
+          this.showTourFilter = !this.showTourFilter;
+        }
       
       },
       limitChange(value){
@@ -235,6 +246,15 @@
       },
       filterSubscriber(data) {
         this.$store.dispatch("member/subscriber/getFilteredData", {
+          searchData: data,
+          page: 1
+        });
+        this.filtered = true;
+        this.filteredData = data,
+        this.$emit("filteredData", data);
+      },
+      filterTour(data) {
+        this.$store.dispatch("booking/tour/getFilteredData", {
           searchData: data,
           page: 1
         });
