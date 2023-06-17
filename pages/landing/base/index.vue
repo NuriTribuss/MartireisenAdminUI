@@ -138,7 +138,7 @@ export default {
     },
     handleTableChange(pagination, filters, sorter,filtered,filteredData) {
       if (filtered) {
-        this.$store.dispatch("landing/zone/getFilteredData", {
+        this.$store.dispatch("landing/base/getFilteredData", {
           searchData:filteredData,
           page: pagination
         });
