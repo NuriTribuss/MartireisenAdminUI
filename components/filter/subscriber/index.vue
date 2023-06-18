@@ -16,7 +16,7 @@
                 allowClear
                 v-model="searchData.language"
                 >
-                <a-select-option value="">Tüm Apiler</a-select-option>
+                <a-select-option value="">Tüm Diller</a-select-option>
                 <a-select-option value="de">Almanca</a-select-option>
                 <a-select-option value="tr">Türkçe</a-select-option>
             </a-select>
