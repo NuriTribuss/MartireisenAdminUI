@@ -74,6 +74,12 @@ export const getMenuData = [
           key: 'ecommerce-feed',
           icon: 'la la-chevrons-right',
           url: '/marketing/affilate',
+        },
+        {
+          title: 'Affilate Links',
+          key: 'ecommerce-links',
+          icon: 'la la-chevrons-right',
+          url: '/marketing/affilatelink',
         }
       ],
     },

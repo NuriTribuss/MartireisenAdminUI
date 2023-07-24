@@ -42,14 +42,10 @@
                     :wrapper-col="{ span: 20 }"
                     label="Bölge / Otel Seçimi"
                   >
-                    <a-select class="col-12 p-0" v-model="form.destination_type" style="width: 100%; " v-on:change="results = []; form.destination_value = ''">
+                    <a-select class="col-12 p-0" v-model="form.destination_type" style="width: 100%; " v-on:change="results = [];">
                       <a-select-option v-for="(d) in destination_types" :key="d.code">{{d.name}}</a-select-option>
                     </a-select>
                   </a-form-item>
-
-
-
-
 
                   <div class="row" v-if="form.travel_api == 'Tour'">
                     <div class="col-8">
@@ -75,11 +71,6 @@
                       </a-form-item>
                     </div>
                   </div>
-
-
-
-
-
 
                   <div class="row" v-if="form.travel_api != 'Tour'">
                     <div class="col-4">
@@ -181,24 +172,23 @@
                       v-on:change="search"
                       v-model="search_value"
                     />
-                     <a-radio-group name="radioGroup" v-model="form.destination_value" v-if="form.destination_type == 'state'">
+                     <a-radio-group name="radioGroup" v-if="form.destination_type == 'state'" @change="hotelDestinationChanged">
                       <a-row>
                         <a-col :span="24" v-for="el in results" :key="el.code">
-                          <a-radio class="mt-2" :value="el.code">{{el.value}} </a-radio>
+                          <a-radio class="mt-2" :value="el">{{el.name}} - {{ el.location.name}} </a-radio>
                         </a-col>
                       </a-row>
                     </a-radio-group>
-                     <a-radio-group name="radioGroup" v-model="form.destination_value" v-if="form.destination_type == 'hotel'">
+                     <a-radio-group name="radioGroup" v-if="form.destination_type == 'hotel'" @change="hotelDestinationChanged">
                       <a-row>
                         <a-col :span="24" v-for="el in results" :key="el.code">
-                          <a-radio class="mt-2" :value="el.code">{{el.name}} - {{ el.location.name}}</a-radio>
+                          <a-radio class="mt-2" :value="el">{{el.name}} - {{ el.location.name}}</a-radio>
                         </a-col>
                       </a-row>
                     </a-radio-group>
+                    <a-spin v-if="loading" tip="Loading..." class="d-flex justify-content-center m-1"></a-spin>  
                   </a-card>
-
-
-                
+                  
               </a-col>
             </a-form>
           </ValidationObserver>
@@ -305,7 +295,8 @@ export default {
     this.$axios.post('/booking/tour/tour/search?active=1&ssr=1',this.tourSearchData)
       .then((response) => {
           this.tours = response.data.data;
-    })
+    });
+    this.calcDuration();
   },
   computed: {
     e() {
@@ -324,14 +315,24 @@ export default {
   },
   methods: {
     search(){
+        this.form.destination_name = '';
+        this.form.destination_value = '';
         let data = new FormData;
         data.append("q",this.search_value);
-
         let prefix = this.form.destination_type == 'state' ? 'states' : 'hotels';
         this.$axios.post('/marketing/affilate/search-hotel/'+this.search_value,{api : this.form.travel_api})
         .then((response) => {
             this.results = response.data.data.giataHotelList;
+            this.loading = false;
           })
+    },
+    hotelDestinationChanged(e){
+      this.form.destination_name = e.target.value["name"];
+      this.form.destination_value = e.target.value["code"];
+      console.log(e);
+    },
+    stateDestinationChanged(e){
+      console.log(e);
     },
     resolveState({ errors, pending, valid }) {
       if (errors[0]) {
@@ -339,7 +340,7 @@ export default {
       }
       return "";
     },
-    calcDates()
+    calcDates() 
     {
       let newVal = this.$moment(this.form.date_start).add(this.form.duration, "days").format('YYYY-MM-DD');
       if(newVal != this.form.date_end){
@@ -350,6 +351,7 @@ export default {
       let newVal = this.form.duration = this.$moment(this.form.date_end).diff(this.form.date_start,"days")
       if(newVal != this.form.duration && newVal > 0){
         this.form.duration=newVal;
+        console.log(newVal);
       }
     },
     onSubmit() {
@@ -403,9 +405,10 @@ export default {
       if(tour != null){
         vue.periods = tour[0].periods;
       }
-    }
-
+    },
     
   },
 };
 </script>
+<style scoped>
+</style>

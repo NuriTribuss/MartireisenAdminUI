@@ -20,6 +20,7 @@ export const endpoints = {
     "log"                         : 'sys/domain',
     "campaign_promo"              : "marketing/coupon",
     "campaign_affilate"           : "marketing/affilate",
+    "campaign_affilatelink"       : "marketing/affilatelink",
 	'content_post'                : 'content/post/post',
     'content_post_category'       : 'content/post/category',
     'content_page'                : 'content/page',
